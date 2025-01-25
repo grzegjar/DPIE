@@ -53,8 +53,6 @@ header p {
     border-bottom: 2px solid #0d47a1;
     padding-bottom: 10px;
 }
-
-/* Galeria */
 .gallery-container {
     position: relative;
     max-width: 100%;
@@ -81,19 +79,67 @@ header p {
     background: #1565c0;
 }
 
-.gallery-container img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: none;
-    border: 2px solid #0d47a1;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.gallery-item {
+    display: none; /* Ukryj wszystkie elementy galerii */
+    text-align: center; /* Wyśrodkuj zawartość */
 }
 
-.gallery-container img.active {
-    display: block;
+.gallery-item.active {
+    display: block; /* Pokaż tylko aktywny element */
+}
+
+.image-frame {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 500px;
+    padding: 10px;
+    border: 2px solid #0d47a1;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Wyśrodkuj zawartość ramki */
+}
+
+.image-frame img {
+    max-width: 100%;
+    max-height: 400px; /* Maksymalna wysokość ramki */
+    width: auto; /* Skalowanie proporcjonalne */
+    height: auto; /* Skalowanie proporcjonalne */
+    object-fit: contain;
     margin: 0 auto;
+    border: none; /* Usuń dodatkowe obramowanie wokół obrazu */
+}
+
+.image-caption {
+    margin-top: 10px; /* Odstęp między obrazem a podpisem */
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+
+.image-frame img {
+    max-width: 100%;
+    max-height: 400px; /* Maksymalna wysokość obrazu */
+    width: auto; /* Skalowanie proporcjonalne */
+    height: auto; /* Skalowanie proporcjonalne */
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+}
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #0d47a1; /* Kolor tekstu podpisu */
+    text-align: center;
+    font-weight: bold;
+    background: #f4f4f9; /* Tło pod podpisem */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lekki cień pod podpisem */
+    width: 100%; /* Dopasowanie szerokości do kontenera */
 }
 
 /* Stopka */
@@ -121,38 +167,77 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 180px;
+    width: 200px;
     height: 100%;
     background-color: #1a237e;
     color: #fff;
-    padding-top: 50px;
-    padding-left: 10px;
+    padding: 20px 15px;
     z-index: 10;
 }
 
+/* Grupa listy */
 .sidebar ul {
     list-style: none;
-    padding: 0;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #303f9f;
+    border-radius: 12px;
+    box-shadow: 0 14px 6px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar ul li {
     margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-    padding: 5px;
+    padding: 10px;
     display: block;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
+/* Styl hover dla linków */
 .sidebar ul li a:hover {
     background-color: #d9d9e6;
     color: #0d47a1;
+    box-shadow: 24px 26px 23px rgba(0, 0, 0, 0.2);
 }
+/* Oznaczenie głównego menu*/
+.menu-title ul li {
+    background-color: #d9d9e6;
+}
+/* Styl dla podmenu - domyślnie ukryte */
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none; /* Ukrywamy podmenu */
+    background-color: #455a64;
+    border-radius: 5px;
+}
+
+/* Styl dla elementów podmenu */
+.submenu li {
+    margin: 5px 0;
+    box-shadow: none;
+}
+
+/* Zmiana stylu dla elementów o klasie 'active' (czyli rozwiniętych podmenu) */
+.menu-item.active .submenu {
+    display: block; /* Pokazujemy podmenu */
+}
+
+.toggle-submenu::before {
+    content: "+ "; /* Dodajemy znak "+" przed nazwą elementu */
+}
+
+.menu-item.active .toggle-submenu::before {
+    content: "- "; /* Zmieniamy znak na "-" gdy podmenu jest rozwinięte */
+}
+
 
 .content {
     margin-left: 200px;

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPIE: Instrukcja do aplikacji</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <table>
+            <tr><td><center><img src="img/LogoMax.png" alt="LOGO" width="75"></center></td></tr>
+            <tr><td>
+                <ul>
+                    <li><a href=index.html>DPIE</a></li>
+                </ul>
+            </td></tr>
+            
+            <tr><td> 
+                <ul><li><a href="#dpie" class="menu-title">INSTRUKCJA</a> </li>                           
+                    <li class="menu-item">
+                        <a href="#cel" class="toggle-submenu">Cel programu</a>
+                        <ul class="submenu">
+                            <li><a href="#zalozenia">Podstawowe założenia</a></li>
+                        </ul>  
+                    </li> 
+                    <li class="menu-item">
+                        <a href="#dodawnie-tabele" class="toggle-submenu">Praca z bazą danych</a>
+                        <ul class="submenu">
+                            <li><a href="#dodawnie-tabele">Dodawanie danych do tabeli</a></li>
+                            <li><a href="#modyfikacja-tabele">Modyfikacja danych</a></li>
+                            <li><a href="#funkcje-tabele">Funkcje specjalne</a></li>
+                        </ul>  
+                    </li> 
+                    <li class="menu-item">
+                        <a href="#okno-glowne" class="toggle-submenu">Tworzenie nowej dokumentacji</a>
+                        <ul class="submenu">
+                            <li><a href="#okno-glowne">Okno główne programu</a></li>
+                            <li><a href="#ustawienia-domyslne">Ustawienia domyślne</a></li>
+                            <li><a href="#okno-dokumentu">Okno dokumentu</a></li>
+                        </ul>  
+                    </li> 
+                    <li class="menu-item">
+                        <a href="#prot-pww" class="toggle-submenu">Tworzenie protokołu</a>
+                        <ul class="submenu">
+                            <li><a href="#prot-pww">Protokół zadziałania wyłącznika przeciwpożarowego</a></li>
+                            <li><a href="#prot-rcd">Protokół wyłączników różnicowoprądowych</a></li>
+                            <li><a href="#prot-ri">Badania rezystancji izolacji przewodów i kabli</a></li>
+                            <li><a href="#prot-sop">Protokół badania skuteczności ochrony przeciwporażeniowej</a></li>
+                        </ul>  
+                    </li> 
+                </ul>                 
+            </td></tr>
+            <tr><td>
+                <ul>
+                    <li><a href=umowa_licencyjna.html>UMOWA LICENCYJNA</a></li>
+            </td></tr>
+        </table>
+
+    </nav>
+    <div class="content">
+        <section id="dpie">
+            <header>                
+                <p style="font-size:8; text-align: right; padding-right: 10px; font-style:italic">Wersja z dnia 22.01.2025</p>
+                <h1>DPIE - Instrukcja do aplikacji</h1>
+            </header>
+        </section>
+        <div class="container">
+            <div class="section">
+                <section id="cel">
+                    <h2>Cel programu</h2>
+                    <p>Program stworzony został z myślą ułatwienia pracy 
+                        w przygotowaniu dokumentacji z badania instalacji elektrycznych.</p>
+                        <section id="zalozenia">
+                            <p><b>Podstawowe założenia:</b></p>
+                            <ul><li>Dokumentacja zawiera stronę tytułową z danymi:
+                                <ul>
+                                    <li>Zleceniodawcy,</li>
+                                    <li>Wykonawcy,</li>
+                                    <li>Warunków pomiarów,</li>
+                                    <li>Daty badania i Daty następnego badania,</li>
+                                    <li>Przyrządów pomiarowych,</li>
+                                    <li>Zestawienie stworzonych protokołów,</li>
+                                    <li>Podsumowanie i ocena końcowa.</li>
+                                </ul>
+                            </li></ul>
+                            <ul><li>Dostępne protokoły z badań:
+                                <ul>
+                                    <li>Protokół z badania rezystancji izolocji przewodów i kabli,</li>
+                                    <li>Protokół z badania wyłączników różnicowoprądowych,</li>
+                                    <li>Protokół ze sprawdzenia skuteczności ochrony przeciwporażeniowej przez samoczyne wyłączenie,</li>
+                                    <li>Protokół z zadziałania przeciwpożarowego wyłącznik prądu,</li>
+                                    <li>Protokół z pomiar rezystancji uziemienia (w przygotowaniu),</li>
+                                    <li>Protokół z badania stanu instalacji odgromowej i rezystancji uziemienia (w przygotowaniu),</li>
+                                    <li>Protokół z pomiarów oświetlenia awaryjnego i ewakuacyjnego oraz prób technicznych (w przygotowaniu).</li>
+                                </ul>
+                            </li></ul>
+                            <ul><li>Wprowadzanie danych:
+                                <ul>
+                                    <li>Użytkownik tworzy dokumentację według własnych potrzeb dokonując wyboru protokołów,</li>
+                                    <li>Definiowanie domyślnych danych (części danych) wprowadzanych do raportu,</li>
+                                    <li>Wprowadzanie list: pomieszczeń, rozdzielni, urządzeń, ...</li>
+                                    <li>Gromadzenie uwag i orzeczeń dla każdego protokołu z osobna oraz dla dokumentacji jako podsumowanie.</li>
+                                </ul>
+                            </li></ul>
+                            <ul><li>Dokument wyjściowy - pełna dokumentacja z pomiarów:
+                                <ul>
+                                    <li>Dokumentem wyjściowym są pliki w dokumencie formacie Microsoft Word (.docx) oraz,</li>
+                                    <li>w formacie .pdf przypadku zainstalowanego pakietu LibreOffice (wersja na licencji Open Source, w pełni darmowa do użytku komercyjnego)</li>
+                                </ul>
+                            </li></ul>
+                        </section>
+                </section>
+            </div>
+            <div class="section">
+                <section id="praca-z-baza">
+                    <h2>Praca z bazą danych</h2>  
+                        <section id="praca-z-baza">
+                            <p><b>1. Dadawanie danych do tabeli</b>
+                            <div class="gallery-container">
+                                <button class="arrow left">&lt;</button>
+                            
+                                <div class="gallery-item active">
+                                    <div class="image-frame">
+                                        <img src="img/wprowadzanie_danych_pusta_tabela.png" alt="Pusta tabela">
+                                        <p class="image-caption">1. Pod tabelą znjaduje się sekcja do wprowadzania i modyfikowania danych</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="image-frame">
+                                        <img src="img/sekcja_modyfikacji_danych.png" alt="Widok główny programu">
+                                        <p class="image-caption">2. Po wprowadzeniu danych  i wciśnięciu klawisza Dodaj, dane przenoszą się do tabeli</p>
+                                        <p class="image-caption" style="font-size:12px; text-align:left"><i>Podczas dodawania danych, pewne dane będą ignorowane. Tak jest na przykład z  polem L.p. Bez względu 
+                                            na to, co w tym polu zostanie wprowadzone. Wyzwolenie klawisza Dodaj, spowoduje dodanie do tabeli nowego wiersza z numerem L.p.
+                                            automatycznie o jeden większym od najwyższego z istniejących w tabeli. Pierwszy wpis L.p. przyjmie wartość równą jeden.</strong></p>
+                                            <p class="image-caption" style="font-size:12px; text-align:left">Wobec powyższego wprowadzenie drugiego wpisu, bez modyfikacji zawartości pola L.p.
+                                            Skutkować będzie dodaniem nowego wpisu z zachowaniem autonumeracji.</i></p>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="image-frame">
+                                        <img alt="sekcja_modyfikacji_drugi_wpis" src="img/drugi_wpis.png" />
+                                        <p class="image-caption">3.1 W L.p. wprowadzona jest wartość 1, z takim stanem wciskamy 
+                                            Doadaj (patrz dalej ...)</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="image-frame">
+                                        <img alt="sekcja_modyfikacji_drugi_wpis_wprowadzony" src="img/drugi_wpis_wprowadzony.png" />
+                                        <p class="image-caption">3.2 W tabeli L.p. zwiększyło się o jeden (bez wzgledu na poprzedni wpis w polu edycji). 
+                                            Pola edycji zostały zaktualiowane do wartości z nowego wpisu.</p>
+                                    </div>
+                                </div>
+                                <button class="arrow right">&gt;</button>
+                            </div>
+                            <p><b>2. Modyfikacja danych</b>
+                                <div class="gallery-container">
+                                    <button class="arrow left">&lt;</button>
+                                
+                                    <div class="gallery-item active">
+                                        <div class="image-frame">
+                                            <img src="img/wprowadzanie_danych_pusta_tabela.png" alt="Pusta tabela">
+                                            <p class="image-caption">1. Pod tabelą znjaduje się sekcja do wprowadzania i modyfikowania danych</p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="image-frame">
+                                            <img src="img/sekcja_modyfikacji_danych.png" alt="Widok główny programu">
+                                            <p class="image-caption">2. Po wprowadzeniu danych  i wciśnięciu klawisza Dodaj, dane przenoszą się do tabeli</p>
+                                            <p class="image-caption" style="font-size:12px; text-align:left"><i>Podczas dodawania danych, pewne dane będą ignorowane. Tak jest na przykład z  polem L.p. Bez względu 
+                                                na to, co w tym polu zostanie wprowadzone. Wyzwolenie klawisza Dodaj, spowoduje dodanie do tabeli nowego wiersza z numerem L.p.
+                                                automatycznie o jeden większym od najwyższego z istniejących w tabeli. Pierwszy wpis L.p. przyjmie wartość równą jeden.</strong></p>
+                                                <p class="image-caption" style="font-size:12px; text-align:left">Wobec powyższego wprowadzenie drugiego wpisu, bez modyfikacji zawartości pola L.p.
+                                                Skutkować będzie dodaniem nowego wpisu z zachowaniem autonumeracji.</i></p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="image-frame">
+                                            <img alt="sekcja_modyfikacji_drugi_wpis" src="img/drugi_wpis.png" />
+                                            <p class="image-caption">3.1 W L.p. wprowadzona jest wartość 1, z takim stanem wciskamy 
+                                                Doadaj (patrz dalej ...)</p>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="image-frame">
+                                            <img alt="sekcja_modyfikacji_drugi_wpis_wprowadzony" src="img/drugi_wpis_wprowadzony.png" />
+                                            <p class="image-caption">3.2 W tabeli L.p. zwiększyło się o jeden (bez wzgledu na poprzedni wpis w polu edycji). 
+                                                Pola edycji zostały zaktualiowane do wartości z nowego wpisu.</p>
+                                        </div>
+                                    </div>
+                                    <button class="arrow right">&gt;</button>
+                                </div>
+                            <h3 id="2-modyfikacja-danych">2. Modyfikacja danych<a class="headerlink" href="#2-modyfikacja-danych" title="Permanent link">&para;</a></h3>
+                            <p><strong>Modyfikacja wprowadzonych danych lub ich usuwanie możliwe jest tylko i wyłącznie po zaznaczeniu modyfikowanego wiersza.</strong></p>
+                            <p>Dane z zaznaczonego wiersza tabeli automatycznie przepiszą się do sekcji modyfikacji danych. 
+                            W tej chwili można zmodyfikować jego wpis w poszczególnych polach i zapisać, za pomocą klawisza Zapisz.</p>
+                            <p><img alt="modyfikacja danych - zaznaczenie wiersza modyfikowanego" src="img/modyfikacja_dnych_zaznaczenie.png" /></p>
+                            <p><img alt="modyfikacja danych - zaznaczenie wiersza modyfikowanego i zapis" src="img/modyfikacja_dnych_zaznaczenie_i_zapisanie_wiersza.png" /></p>
+                            <h3 id="3-usuwanie-danych">3. Usuwanie danych<a class="headerlink" href="#3-usuwanie-danych" title="Permanent link">&para;</a></h3>
+                            <p>Podobnie jak podczas modyfikacji należy w pierwszej kolejności zaznaczyć usuwany wiersz.
+                            Wyzwolenie klawisza Usuń spowoduje jego usunięcie z tabeli.</p>
+                            <h3 id="4-specjalne-funkcje">4. Specjalne funkcje<a class="headerlink" href="#4-specjalne-funkcje" title="Permanent link">&para;</a></h3>
+                            <p>W przypadku niektórych tabel, występują dodatkowe klawisze spełniające różne funkcje, takie jak;</p>
+                            <ul>
+                            <li>Wybierz - w celu wybrania zaznaczonej pozycji i przeniesienia jej do innej tabeli</li>
+                            <li>Dodaj - niekiedy pełni funkcję wykonania dodatkowych operacji, takich jak obliczenia i automatyczne wprowadzania oceny </li>
+                            </ul>
+                            <p>Poniżej funkcja wybierz wyłącznik spowoduje, otwarcie nowej tabeli ze zdefiniowanymi wyłącznikami nadprądowymi.  </p>
+                            <p><img alt="funkcja wybierz" src="img/funkcja_wybierz.png" /></p>
+                            <p>Tabela ta posiada również klawisze funkcyjne wybierz: ta = 0,2s, ta = 0,4S i ta = 5s 
+                            służące do pobrania z tabeli danych według odpowiedniej charakterystyki czasowej wyłącznika.</p>
+                            <p><img alt="tabela urządzenia" src="img/tabela_urz%C4%85dzenia.png" /></p>
+                            <p>Pobrane dane wyłącznika S191B, dla charakterystyki ta = 0,2s. Zostały pobrane do pól, których nie należy modyfikować. 
+                            Pola tak oznaczone nie powinny być modyfikowane, ale program nie będzie tego ograniczał. Daje to większą elastyczność we wprowadzaniu danych.
+                            Trzeba mieć jednak świadomość poprawności wprowadzanych tam danych. 
+                            Inne pola oznaczone podobnym kolorem zostaną uzupełnione po wybraniu klawisza Dodaj, który w tym 
+                            przypadku spełni dodatkowo funkcję wyliczającą wartości danych Iz i Za oraz wprowadzi wynik oceny według zasady określonej normą.</p>
+                        </section>
+                </section>
+            </div>
+            <div class="section">
+                <section id="galeria">
+                    <h2>Galeria</h2>
+                    <div class="gallery-container">
+                        <button class="arrow left">&lt;</button>
+                    
+                        <div class="gallery-item active">
+                            <div class="image-frame">
+                                <img src="img/okno_główne_dokumentacji_pomiarów.png" alt="Widok główny programu">
+                                <p class="image-caption">Opis zdjęcia 1</p>
+                            </div>
+                        </div>
+                    
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img/okno_ri.png" alt="Protokół rezystancji izolacji">
+                                <p class="image-caption">Opis zdjęcia 2</p>
+                            </div>
+                        </div>
+                    
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img/okno_ri_rozdzielnie.png" alt="Zarządzanie bazą urządzeń">
+                                <p class="image-caption">Opis zdjęcia 3</p>
+                            </div>
+                        </div>
+                    
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img/okno_sop.png" alt="Widok SOP">
+                                <p class="image-caption">Opis zdjęcia 4</p>
+                            </div>
+                        </div>
+                    
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img/tabela_urządzenia.png" alt="Tabela urządzeń">
+                                <p class="image-caption">Opis zdjęcidsdsjkhdkjsahjdhsakjhdjkhsajkhdjkahdjsahjdadssa  dd  kasdkj aka s dhjashdhasdhsakjhdjd khdkjdjkshakjdadasasasdasdasda 5</p>
+                            </div>
+                        </div>
+                    
+                        <button class="arrow right">&gt;</button>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="img/LogoMax.png" align="right" alt="LOGO" width="75">
+        <p>&copy; 2025 Office - Makra. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

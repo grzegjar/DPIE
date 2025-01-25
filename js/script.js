@@ -1,29 +1,44 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".gallery-container img");
+    const galleryItems = document.querySelectorAll(".gallery-item");
     const prevButton = document.querySelector(".arrow.left");
     const nextButton = document.querySelector(".arrow.right");
 
     let currentIndex = 0;
 
-    // Funkcja do aktualizacji aktywnego obrazu
     function updateGallery(index) {
-        images.forEach((img, i) => {
-            img.classList.toggle("active", i === index);
+        galleryItems.forEach((item, i) => {
+            item.classList.toggle("active", i === index);
         });
     }
 
-    // Obsługa kliknięcia strzałek
     prevButton.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
         updateGallery(currentIndex);
     });
 
     nextButton.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % images.length;
+        currentIndex = (currentIndex + 1) % galleryItems.length;
         updateGallery(currentIndex);
     });
 
-    // Początkowa aktualizacja
+    // Inicjalizacja galerii
     updateGallery(currentIndex);
+});
+
+
+
+document.querySelectorAll('.toggle-submenu').forEach(item => {
+    item.addEventListener('click', function(event) {
+        const parentLi = item.parentElement;
+        parentLi.classList.toggle('active');
+        
+        // Jeśli jakieś inne podmenu jest otwarte, zamykamy je
+        document.querySelectorAll('.menu-item').forEach(li => {
+            if (li !== parentLi) {
+                li.classList.remove('active');
+            }
+        });
+        
+        event.preventDefault(); // Zapobiega przeładowaniu strony
+    });
 });

@@ -207,36 +207,81 @@ html, body {
     box-shadow: 24px 26px 23px rgba(0, 0, 0, 0.2);
 }
 /* Oznaczenie głównego menu*/
-.menu-title ul li {
-    background-color: #d9d9e6;
+/* Styl dla aktywnej pozycji INSTRUKCJA */
+.menu-title {
+    color: #003c8f !important; /* Kolor tekstu dla INSTRUKCJI */
+    background-color: #bbdefb; /* Jasne tło dla wyróżnienia */
+    border-radius: 4px; /* Zaokrąglone rogi dla przyjemniejszego wyglądu */
+    padding: 5px 10px; /* Odstępy wewnętrzne */
+    display: inline-block; /* Umożliwia stosowanie paddingu do linku */
+    transition: background-color 0.3s ease; /* Płynna zmiana tła */
 }
-/* Styl dla podmenu - domyślnie ukryte */
+
+/* Efekt hover dla INSTRUKCJI */
+.menu-title:hover {
+    background-color: #bbdefb; /* Jaśniejsze tło na hover */
+    color: #003c8f; /* Zmiana koloru tekstu na ciemniejszy */
+}
+
+/* Podmenu */
 .submenu {
     list-style: none;
     padding-left: 20px;
-    display: none; /* Ukrywamy podmenu */
-    background-color: #455a64;
+    display: none;  /* Ukryte podmenu */
+    background-color: #455a64;  /* Ciemniejsze tło */
     border-radius: 5px;
 }
 
-/* Styl dla elementów podmenu */
-.submenu li {
-    margin: 5px 0;
-    box-shadow: none;
-}
-
-/* Zmiana stylu dla elementów o klasie 'active' (czyli rozwiniętych podmenu) */
+/* Aktywne podmenu z jaśniejszą ramką po lewej stronie */
 .menu-item.active .submenu {
-    display: block; /* Pokazujemy podmenu */
+    display: block;  /* Pokazujemy podmenu */
+    border-left: 1px solid #80cbc4;  /* Jaśniejsza ramka (kolor może być zmieniony na odpowiedni dla ciemnego tła) */
 }
 
+/* Znak "+" i "-" przed nazwą elementu */
 .toggle-submenu::before {
-    content: "+ "; /* Dodajemy znak "+" przed nazwą elementu */
+    content: "+ ";  /* Znak "+" przed nazwą elementu */
 }
 
 .menu-item.active .toggle-submenu::before {
-    content: "- "; /* Zmieniamy znak na "-" gdy podmenu jest rozwinięte */
+    content: "- ";  /* Zmieniamy znak na "-" gdy podmenu jest rozwinięte */
 }
+
+/* Zmiana koloru aktywnej pozycji w menu */
+.menu-title.active {
+    font-weight: bold;
+    color: #003c8f;
+}
+
+/* Styl linków w podmenu */
+.submenu li > a {
+    color: #ffffff;  /* Kolor tekstu w podmenu */
+    text-decoration: none;  /* Brak podkreślenia */
+}
+
+.submenu li > a:hover {
+    color: #ffffff;  /* Kolor tekstu w podmenu przy hoverze */
+}
+
+/* Styl dla sekcji INSTRUKCJA */
+.menu-instrukcja {
+    border: 1px solid #dbeafe; /* Cienka jasna ramka */
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f8fbff;
+}
+
+.menu-instrukcja a {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.menu-instrukcja a:hover {
+    text-decoration: none;
+}
+
+
 
 
 .content {

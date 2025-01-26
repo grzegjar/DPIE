@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* Nagłówek */
 header {
     background: #0d47a1;
@@ -26,7 +27,6 @@ header h1 {
         -2px -2px 4px #aaa,
         2px 2px 4px #000;
 }
-
 header p {
     font-size: 1.2em;
     margin-top: 5px;

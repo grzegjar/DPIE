@@ -32,6 +32,14 @@ header p {
     margin-top: 5px;
 }
 
+.horizontal-line {
+    width: 100%; /* Szerokość linii */
+    height: 1px; /* Wysokość linii, dostosuj w razie potrzeby */
+    background-color: #0d47a1; /* Kolor linii */
+    margin: 0 auto; /* Wyśrodkowanie linii */
+    display: inline-block; /* Ustawienie jako element blokowy */
+}
+
 /* Kontener strony */
 .container {
     max-width: 1200px;

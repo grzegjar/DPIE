@@ -123,16 +123,54 @@
             <div class="section">
                 <section id="galeria">
                     <h2>Galeria</h2>
-                    <div class="gallery-container">
-                        <button class="arrow left">&lt;</button>
-                        <img src="img\okno_główne_dokumentacji_pomiarów.png" alt="Widok główny programu" class="active">
-                        <img src="img\okno_ri.png" alt="Protokół rezystancji izolacji">
-                        <img src="img\okno_ri_rozdzielnie.png" alt="Zarządzanie bazą urządzeń">
-                        <img src="img\okno_sop.png" alt="Widok główny programu">
-                        <img src="img\okno_rcd.png" alt="Widok główny programu">
-                        <img src="img\tabela_urządzenia.png" alt="Widok główny programu">
-                        <button class="arrow right">&gt;</button>
+                    <div class="gallery-container" id="gallery-1">
+                        <button class="arrow left" id="prev-1">&lt;</button>
+                    
+                        <div class="gallery-item active">
+                            <div class="image-frame">
+                                <img alt="Widok główny programu" 
+                                src="img\okno_główne_dokumentacji_pomiarów.png" class="active" />
+                                <p class="image-caption">Widok główny programu</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img\okno_ri.png" 
+                                alt="modyfikacja i zapisywanie danych">
+                                <p class="image-caption">Protokół rezystancji izolacji</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img\okno_ri_rozdzielnie.png" 
+                                alt="Definiowanie i wybór rozdzielni">
+                                <p class="image-caption">Definiowanie i wybór rozdzielni</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img\okno_sop.png" 
+                                alt="Protokół badania skuteczności ochrony przeciwporażeniowej">
+                                <p class="image-caption">Protokół badania skuteczności ochrony przeciwporażeniowej</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img\okno_rcd.png" 
+                                alt="Protokół badania wyłączników RCD">
+                                <p class="image-caption">Protokół badania wyłączników RCD</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image-frame">
+                                <img src="img\tabela_urzadzenia.png" 
+                                alt="Tabela wyłączników nadprądowych">
+                                <p class="image-caption">Tabela wyłączników nadprądowych</p>
+                            </div>
+                        </div>
+                        <button class="arrow right" id="next-1">&gt;</button>
                     </div>
+                <div class="horizontal-line"></div>     
                 </section>
             </div>
         </div>

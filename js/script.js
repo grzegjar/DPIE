@@ -1,30 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Obsługa galerii
-    const galleryItems = document.querySelectorAll(".gallery-item");
-    const prevButton = document.querySelector(".arrow.left");
-    const nextButton = document.querySelector(".arrow.right");
-    let currentIndex = 0;
+    // Funkcja inicjalizująca galerię
+    function initializeGallery(galleryId, prevButtonClass, nextButtonClass) {
+        const gallery = document.querySelector(galleryId);
+        const galleryItems = gallery.querySelectorAll(".gallery-item");
+        const prevButton = gallery.querySelector(prevButtonClass);
+        const nextButton = gallery.querySelector(nextButtonClass);
+        let currentIndex = 0;
 
-    function updateGallery(index) {
-        galleryItems.forEach((item, i) => {
-            item.classList.toggle("active", i === index);
-        });
+        function updateGallery(index) {
+            galleryItems.forEach((item, i) => {
+                item.classList.toggle("active", i === index);
+            });
+        }
+
+        if (prevButton && nextButton && galleryItems.length > 0) {
+            prevButton.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+                updateGallery(currentIndex);
+            });
+
+            nextButton.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % galleryItems.length;
+                updateGallery(currentIndex);
+            });
+
+            // Inicjalizacja galerii
+            updateGallery(currentIndex);
+        }
     }
 
-    if (prevButton && nextButton && galleryItems.length > 0) {
-        prevButton.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-            updateGallery(currentIndex);
-        });
-
-        nextButton.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % galleryItems.length;
-            updateGallery(currentIndex);
-        });
-
-        // Inicjalizacja galerii
-        updateGallery(currentIndex);
-    }
+     // Inicjalizuj każdą galerię
+     initializeGallery("#gallery-1", "#prev-1", "#next-1");
+     initializeGallery("#gallery-2", "#prev-2", "#next-2");
+     initializeGallery("#gallery-3", "#prev-3", "#next-3");
 
     // Obsługa submenu
     document.querySelectorAll('.toggle-submenu').forEach(item => {

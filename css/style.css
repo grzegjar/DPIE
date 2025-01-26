@@ -356,9 +356,44 @@ html, body {
         2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
     transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
 }
-
+.shadowed-text {
+    font-size: 12px; /* Dostosuj rozmiar tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
+    text-shadow:
+        0px 1px 0px rgba(0, 0, 0, 0.2), /* Cień tekstu */
+        2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
+    transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
+}
 /* Efekt hover */
 .shadowed-text:hover {
+    color: #0000f2; /* Ciemniejszy odcień niebieskiego po najechaniu */
+    text-shadow:
+        1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */
+        6px 8px 2px rgba(0, 0, 0, 0.2); /* Drugi poziom cienia po najechaniu */
+    transform: translateY(-2px); /* Lekkie przesunięcie w górę */
+}
+/* Stylowanie linku z cieniowaniem liter */
+.shadowed-text-b {
+    /*font-size: 24px; /* Dostosuj rozmiar tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
+    text-shadow:
+        0px 1px 0px rgba(0, 0, 0, 0.2), /* Cień tekstu */
+        2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
+    transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
+}
+.shadowed-text-b {
+    /*font-size: 12px; /* Dostosuj rozmiar tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
+    text-shadow:
+        0px 1px 0px rgba(0, 0, 0, 0.2), /* Cień tekstu */
+        2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
+    transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
+}
+/* Efekt hover */
+.shadowed-text-b:hover {
     color: #0000f2; /* Ciemniejszy odcień niebieskiego po najechaniu */
     text-shadow:
         1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */

@@ -186,7 +186,7 @@ html, body {
 /* Grupa listy */
 .sidebar ul {
     list-style: none;
-    padding: 5px;
+    padding-left: 5px;
     margin: 0 auto;
     background-color: #303f9f;
     border-radius: 12px;
@@ -194,7 +194,7 @@ html, body {
 }
 
 .sidebar ul li {
-    margin: 10px 0;
+    margin: 1px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -202,7 +202,7 @@ html, body {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
     display: block;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -214,6 +214,31 @@ html, body {
     color: #0d47a1;
     box-shadow: 24px 26px 23px rgba(0, 0, 0, 0.2);
 }
+/* Kontener całego menu */
+.menu-container {
+    max-height: 100vh; /* Maksymalna wysokość menu = wysokość okna przeglądarki */
+    overflow-y: auto; /* Włącz przewijanie w pionie, jeśli menu jest za długie */
+    scrollbar-width: thin; /* (Opcjonalnie) Wąski pasek przewijania dla przeglądarek wspierających */
+}
+
+/* Styl dla paska przewijania w Webkit (Chrome, Edge, Safari) */
+.menu-container::-webkit-scrollbar {
+    width: 8px; /* Szerokość paska przewijania */
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+    background-color: #90a4ae; /* Kolor uchwytu paska przewijania */
+    border-radius: 4px; /* Zaokrąglone krawędzie uchwytu */
+}
+
+.menu-container::-webkit-scrollbar-thumb:hover {
+    background-color: #607d8b; /* Ciemniejszy kolor uchwytu po najechaniu */
+}
+
+.menu-container::-webkit-scrollbar-track {
+    background-color: #cfd8dc; /* Tło paska przewijania */
+}
+
 /* Oznaczenie głównego menu*/
 /* Styl dla aktywnej pozycji INSTRUKCJA */
 .menu-title {
@@ -275,8 +300,8 @@ html, body {
 .menu-instrukcja {
     border: 1px solid #dbeafe; /* Cienka jasna ramka */
     border-radius: 6px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 2px;
+    margin-top: 1px;
     background-color: #f8fbff;
 }
 

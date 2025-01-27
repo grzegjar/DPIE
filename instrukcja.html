@@ -9,64 +9,65 @@
 </head>
 <body>
     <nav class="sidebar">
-        <table>
-            <tr><td><center><img src="img/LogoMax.png" alt="LOGO" width="75"></center></td></tr>
-            <tr><td>
-                <ul>
-                    <li><a href=index.html>DPIE</a></li>
-                </ul>
-            </td></tr>
-            
-            <tr><td> 
-                <ul class="menu-instrukcja">
-                    <li><a href="#dpie" class="menu-title">INSTRUKCJA</a> </li>                           
-                    <li class="menu-item">
-                        <a href="#cel" class="toggle-submenu">Cel programu</a>
-                        <ul class="submenu">
-                            <li><a href="#zalozenia">Podstawowe założenia</a></li>
-                        </ul>  
-                    </li> 
-                    <li class="menu-item">
-                        <a href="#praca-z-baza" class="toggle-submenu">Praca z bazą danych</a>
-                        <ul class="submenu">
-                            <li><a href="#dodawnie-tabele">Dodawanie danych do tabeli</a></li>
-                            <li><a href="#modyfikacja-tabele">Modyfikacja danych</a></li>
-                            <li><a href="#usuwanie-tabela">Usuwanie danych</a></li>
-                            <li><a href="#funkcje-tabele">Funkcje specjalne</a></li>
-                        </ul>  
-                    </li> 
-                    <li class="menu-item">
-                        <a href="#tworzenie-dokumentacji" class="toggle-submenu">Tworzenie nowej dokumentacji</a>
-                        <ul class="submenu">
-                            <li><a href="#okno-glowne">Okno główne programu</a></li>
-                            <li><a href="#ustawienia-domyslne">Ustawienia domyślne</a></li>
-                            <li><a href="#okno-dokumentu">Okno dokumentu</a></li>
-                        </ul>  
-                    </li> 
-                    <li class="menu-item">
-                        <a href="#tworzenie-protokolow" class="toggle-submenu">Tworzenie protokołu</a>
-                        <ul class="submenu">
-                            <li><a href="#prot-pww">1. Protokół zadziałania wyłącznika przeciwpożarowego</a></li>
-                            <li><a href="#prot-sop">5. Protokół badania skuteczności ochrony przeciwporażeniowej</a></li>
-                            <li><a href="#prot-rcd">6. Protokół wyłączników różnicowoprądowych</a></li>
-                            <li><a href="#prot-ri">7. Badania rezystancji izolacji przewodów i kabli</a></li>
-                            
-                        </ul>  
-                    </li> 
-                </ul>                 
-            </td></tr>
-            <tr><td>
-                <ul>
-                    <li><a href=rodo.html>RODO</a></li>
-                </ul>
-            </td></tr>
-            <tr><td>
-                <ul>
-                    <li><a href=umowa_licencyjna.html>UMOWA LICENCYJNA</a></li>
-                </ul>
-            </td></tr>
-        </table>
-
+        <div class="menu-container">
+            <table>
+                <tr><td><center><img src="img/LogoMax.png" alt="LOGO" width="75"></center></td></tr>
+                <tr><td>
+                    <ul>
+                        <li><a href=index.html>DPIE</a></li>
+                    </ul>
+                </td></tr>
+                
+                <tr><td> 
+                    <ul class="menu-instrukcja">
+                        <li><a href="#dpie" class="menu-title">INSTRUKCJA</a> </li>                           
+                        <li class="menu-item">
+                            <a href="#cel" class="toggle-submenu">Cel programu</a>
+                            <ul class="submenu">
+                                <li><a href="#zalozenia">Podstawowe założenia</a></li>
+                            </ul>  
+                        </li> 
+                        <li class="menu-item">
+                            <a href="#praca-z-baza" class="toggle-submenu">Praca z bazą danych</a>
+                            <ul class="submenu">
+                                <li><a href="#dodawnie-tabele">Dodawanie danych do tabeli</a></li>
+                                <li><a href="#modyfikacja-tabele">Modyfikacja danych</a></li>
+                                <li><a href="#usuwanie-tabela">Usuwanie danych</a></li>
+                                <li><a href="#funkcje-tabele">Funkcje specjalne</a></li>
+                            </ul>  
+                        </li> 
+                        <li class="menu-item">
+                            <a href="#tworzenie-dokumentacji" class="toggle-submenu">Tworzenie nowej dokumentacji</a>
+                            <ul class="submenu">
+                                <li><a href="#okno-glowne">Okno główne programu</a></li>
+                                <li><a href="#ustawienia-domyslne">Ustawienia domyślne</a></li>
+                                <li><a href="#okno-dokumentu">Okno dokumentu</a></li>
+                            </ul>  
+                        </li> 
+                        <li class="menu-item">
+                            <a href="#tworzenie-protokolow" class="toggle-submenu">Tworzenie protokołu</a>
+                            <ul class="submenu">
+                                <li><a href="#prot-pww">1. Protokół zadziałania wyłącznika przeciwpożarowego</a></li>
+                                <li><a href="#prot-sop">5. Protokół badania skuteczności ochrony przeciwporażeniowej</a></li>
+                                <li><a href="#prot-rcd">6. Protokół wyłączników różnicowoprądowych</a></li>
+                                <li><a href="#prot-ri">7. Badania rezystancji izolacji przewodów i kabli</a></li>
+                                
+                            </ul>  
+                        </li> 
+                    </ul>                 
+                </td></tr>
+                <tr><td>
+                    <ul>
+                        <li><a href=rodo.html>RODO</a></li>
+                    </ul>
+                </td></tr>
+                <tr><td>
+                    <ul>
+                        <li><a href=umowa_licencyjna.html>UMOWA LICENCYJNA</a></li>
+                    </ul>
+                </td></tr>
+            </table>
+        </div>
     </nav>
     <div class="content">
         <section id="dpie">
@@ -307,11 +308,13 @@
                     <li>Uwagi, wnioski i Orzeczenie - po jego wywołaniu otwiera się okno 
                     z obszernymi polami do wprowadzania uwag i orzeczeń dla każdego protokołu indywidualnie.</li>
                     </ul>
+
                     <h3 id="prot-sop">3. Protokół SOP - badania skuteczności ochrony przeciwporażeniowej</h3>
                     <div class="image-frame">
                         <img class="image-caption" alt="okno_sop" 
                         src="img/okno_sop.png" />
                     </div> 
+                    
                     <h3 id="prot-rcd"">6. Protokół RCD - badania wyłączników różnicowoprądowych</h3>
                     <ul>
                     <li>
@@ -354,6 +357,7 @@
                     <p><strong>Pamietaj! Zawsze możesz dodać kolejny protokół do głównego dokumentu z inną liczbą wyłączników różnicowoprądowych lub po jednym dla każdego z osobna.</strong></p>
                     </li>
                     </ul>
+                    
                     <h3 id="prot-ri">7. Protokół RI - badania rezystancji izolacji przewodów i kabli</h3>
                     <div class="image-frame">
                         <img class="image-caption" alt="okno_protokołu rezystancji izolacji" 

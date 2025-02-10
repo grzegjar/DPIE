@@ -61,21 +61,21 @@ header p {
   }
   
   .section .check-list li {
-    background: url('../Img/check.png') no-repeat left center;
+    background: url('../img/check.png') no-repeat left center;
 
     padding-left: 30px; /* Zwiększa odstęp, aby nie kolidowało z tekstem */
     line-height: 1.8; /* Dopasowanie do wysokości */
   }
 
   .section .del-list li {
-    background: url('../Img/del_.png') no-repeat left center;
+    background: url('../img/del_.png') no-repeat left center;
 
     padding-left: 30px; /* Zwiększa odstęp, aby nie kolidowało z tekstem */
     line-height: 1.8; /* Dopasowanie do wysokości */
   }
 
   .section li {
-    background: url('../Img/del_.png') no-repeat left center;
+    background: url('../img/del_.png') no-repeat left center;
 
     padding-left: 30px; /* Zwiększa odstęp, aby nie kolidowało z tekstem */
     line-height: 1.8; /* Dopasowanie do wysokości */

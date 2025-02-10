@@ -74,6 +74,12 @@ header p {
     line-height: 1.8; /* Dopasowanie do wysokości */
   }
 
+  .section li {
+    background: url('../Img/del_.png') no-repeat left center;
+
+    padding-left: 30px; /* Zwiększa odstęp, aby nie kolidowało z tekstem */
+    line-height: 1.8; /* Dopasowanie do wysokości */
+  }
 .section h2 {
     margin-top: 0;
     border-bottom: 2px solid #0d47a1;
@@ -221,7 +227,7 @@ html, body {
 .sidebar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px;
     display: block;
     border-radius: 5px;
@@ -233,6 +239,14 @@ html, body {
     background-color: #d9d9e6;
     color: #0d47a1;
     box-shadow: 24px 26px 23px rgba(0, 0, 0, 0.2);
+}
+.cena {
+    font-size: 20px;
+    color: #0000f2; /* Ciemniejszy odcień niebieskiego po najechaniu */
+    text-shadow:
+        1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */
+        4px 4px 2px rgba(0, 0, 0, 0.2); /* Drugi poziom cienia po najechaniu */
+    transform: translateY(-2px); /* Lekkie przesunięcie w górę */
 }
 /* Kontener całego menu */
 .menu-container {
@@ -443,16 +457,7 @@ html, body {
 
 /* Stylowanie linku z cieniowaniem liter */
 .shadowed-text {
-    font-size: 24px; /* Dostosuj rozmiar tekstu */
-    font-weight: bold; /* Pogrubienie tekstu */
-    color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
-    text-shadow:
-        0px 1px 0px rgba(0, 0, 0, 0.2), /* Cień tekstu */
-        2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
-    transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
-}
-.shadowed-text {
-    font-size: 12px; /* Dostosuj rozmiar tekstu */
+    font-size: 16px; /* Dostosuj rozmiar tekstu */
     font-weight: bold; /* Pogrubienie tekstu */
     color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
     text-shadow:
@@ -469,15 +474,7 @@ html, body {
     transform: translateY(-2px); /* Lekkie przesunięcie w górę */
 }
 /* Stylowanie linku z cieniowaniem liter */
-.shadowed-text-b {
-    /*font-size: 24px; /* Dostosuj rozmiar tekstu */
-    font-weight: bold; /* Pogrubienie tekstu */
-    color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
-    text-shadow:
-        0px 1px 0px rgba(0, 0, 0, 0.2), /* Cień tekstu */
-        2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
-    transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
-}
+
 .shadowed-text-b {
     /*font-size: 12px; /* Dostosuj rozmiar tekstu */
     font-weight: bold; /* Pogrubienie tekstu */

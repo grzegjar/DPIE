@@ -60,26 +60,64 @@ header p {
     padding: 0;
   }
   
-  .section .check-list li {
-    background: url('../img/check.png') no-repeat left center;
-
-    padding-left: 30px; /* Zwiększa odstęp, aby nie kolidowało z tekstem */
-    line-height: 1.8; /* Dopasowanie do wysokości */
+  .section .check-list > li {
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 30px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .check-list > li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 3px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/check.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
+  }
+  .section .check-list ul > li {
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 30px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .check-list ul > li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 3px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/round.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
   }
 
   .section .del-list li {
-    background: url('../img/del_.png') no-repeat left center;
-
-    padding-left: 30px; /* Zwiększa odstęp, aby nie kolidowało z tekstem */
-    line-height: 1.8; /* Dopasowanie do wysokości */
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 20px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .del-list li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 5px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/del_.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
+  }
+  .section .del-list ul li {
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 20px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .del-list ul li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 5px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/round.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
   }
 
-  .section li {
-    background: url('../img/del_.png') no-repeat left center;
-
-    padding-left: 30px; /* Zwiększa odstęp, aby nie kolidowało z tekstem */
-    line-height: 1.8; /* Dopasowanie do wysokości */
-  }
 .section h2 {
     margin-top: 0;
     border-bottom: 2px solid #0d47a1;

@@ -124,6 +124,25 @@ header p {
     padding-bottom: 10px;
 }
 
+.section {
+    position: relative; /* Zapewnia, że absolutne pozycjonowanie działa wewnątrz sekcji */
+}
+
+.section .back-to-top {
+    position: absolute;
+    top: 10px; /* Odstęp od górnej krawędzi sekcji */
+    right: 10px; /* Odstęp od prawej krawędzi sekcji */
+    width: 40px; /* Szerokość obrazka */
+    height: 40px; /* Wysokość obrazka */
+    background: url('../img/home_32.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+}
+
+.section .back-to-top:hover {
+    opacity: 0.7; /* Efekt przy najechaniu */
+}
+
 .gallery-container {
     position: relative;
     max-width: 100%;
@@ -279,6 +298,10 @@ html, body {
     box-shadow: 24px 26px 23px rgba(0, 0, 0, 0.2);
 }
 .cena {
+    position: absolute;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    right: 50px;
     font-size: 20px;
     color: #0000f2; /* Ciemniejszy odcień niebieskiego po najechaniu */
     text-shadow:
@@ -415,7 +438,7 @@ html, body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    margin-right: 20px;
+    margin-right: 60px;
     font-size: 16px;
     color: white;
     background: #2e7d32;
@@ -434,7 +457,7 @@ html, body {
     height: 28px;
 }
 .separator {
-    margin: 10px 20px;
+    margin: 40px 10px 20px;
     height: 1px;
     background: #ccc;
 }

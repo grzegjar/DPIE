@@ -143,6 +143,37 @@ header p {
     opacity: 0.7; /* Efekt przy najechaniu */
 }
 
+.tbl-dec table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #90caf9; /* Jasnoniebieska cienka ramka */
+    font-family: Arial, sans-serif;
+}
+
+.tbl-dec th {
+    background-color: #0d47a1; /* Ciemnoniebieski nagłówek */
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+
+.tbl-dec tr:nth-child(even) {
+    background-color: #e3f2fd; /* Bardzo jasny niebieski dla co drugiego wiersza */
+}
+
+.tbl-dec tr:nth-child(odd) {
+    background-color: #ffffff; /* Białe tło dla pozostałych wierszy */
+}
+
+.tbl-dec tr:hover {
+    background-color: #bbdefb; /* Podświetlenie wiersza na jasnoniebieski przy najechaniu */
+}
+
+.tbl-dec td {
+    border: 1px solid #90caf9; /* Cienkie linie */
+    padding: 8px;
+}
+
 .gallery-container {
     position: relative;
     max-width: 100%;
@@ -204,7 +235,7 @@ header p {
     margin-top: 10px; /* Odstęp między obrazem a podpisem */
     font-size: 16px;
     color: #333;
-    font-weight: 500;
+    
 }
 
 

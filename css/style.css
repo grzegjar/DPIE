@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* Nagłówek */
 header {
     background: #0d47a1;
@@ -26,10 +27,17 @@ header h1 {
         -2px -2px 4px #aaa,
         2px 2px 4px #000;
 }
-
 header p {
     font-size: 1.2em;
     margin-top: 5px;
+}
+
+.horizontal-line {
+    width: 100%; /* Szerokość linii */
+    height: 1px; /* Wysokość linii, dostosuj w razie potrzeby */
+    background-color: #0d47a1; /* Kolor linii */
+    margin: 0 auto; /* Wyśrodkowanie linii */
+    display: inline-block; /* Ustawienie jako element blokowy */
 }
 
 /* Kontener strony */
@@ -47,12 +55,125 @@ header p {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.section ul {
+    list-style: none; /* Usuwa domyślny znacznik listy */
+    padding: 0;
+  }
+  
+  .section .check-list > li {
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 30px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .check-list > li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 3px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/check.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
+  }
+  .section .check-list ul > li {
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 30px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .check-list ul > li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 3px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/round.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
+  }
+
+  .section .del-list li {
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 20px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .del-list li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 5px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/del_.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
+  }
+  .section .del-list ul li {
+    position: relative; /* Pozycjonowanie względne dla pseudo-elementu */
+    padding-left: 20px; /* Odsunięcie tekstu od ikony */
+  }
+  .section .del-list ul li::before {
+    content: ""; /* Pseudo-element musi mieć zawartość */
+    position: absolute;
+    top: 5px; /* Ustawienie na górę elementu <li> */
+    left: 0; /* Przesunięcie na lewo */
+    width: 12px; /* Szerokość obrazka */
+    height: 12px; /* Wysokość obrazka */
+    background: url('../img/round.png') no-repeat center center;
+    background-size: contain; /* Dopasowanie do rozmiaru */
+  }
 
 .section h2 {
     margin-top: 0;
     border-bottom: 2px solid #0d47a1;
     padding-bottom: 10px;
 }
+
+.section {
+    position: relative; /* Zapewnia, że absolutne pozycjonowanie działa wewnątrz sekcji */
+}
+
+.section .back-to-top {
+    position: absolute;
+    top: 10px; /* Odstęp od górnej krawędzi sekcji */
+    right: 10px; /* Odstęp od prawej krawędzi sekcji */
+    width: 40px; /* Szerokość obrazka */
+    height: 40px; /* Wysokość obrazka */
+    background: url('../img/home_32.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+}
+
+.section .back-to-top:hover {
+    opacity: 0.7; /* Efekt przy najechaniu */
+}
+
+.tbl-dec table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #90caf9; /* Jasnoniebieska cienka ramka */
+    font-family: Arial, sans-serif;
+}
+
+.tbl-dec th {
+    background-color: #0d47a1; /* Ciemnoniebieski nagłówek */
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+
+.tbl-dec tr:nth-child(even) {
+    background-color: #e3f2fd; /* Bardzo jasny niebieski dla co drugiego wiersza */
+}
+
+.tbl-dec tr:nth-child(odd) {
+    background-color: #ffffff; /* Białe tło dla pozostałych wierszy */
+}
+
+.tbl-dec tr:hover {
+    background-color: #bbdefb; /* Podświetlenie wiersza na jasnoniebieski przy najechaniu */
+}
+
+.tbl-dec td {
+    border: 1px solid #90caf9; /* Cienkie linie */
+    padding: 8px;
+}
+
 .gallery-container {
     position: relative;
     max-width: 100%;
@@ -114,7 +235,7 @@ header p {
     margin-top: 10px; /* Odstęp między obrazem a podpisem */
     font-size: 16px;
     color: #333;
-    font-weight: 500;
+    
 }
 
 
@@ -178,23 +299,24 @@ html, body {
 /* Grupa listy */
 .sidebar ul {
     list-style: none;
-    padding: 5px;
+    padding-left: 5px;
     margin: 0 auto;
     background-color: #303f9f;
     border-radius: 12px;
     box-shadow: 0 14px 6px rgba(0, 0, 0, 0.2);
 }
 
+
 .sidebar ul li {
-    margin: 10px 0;
+    margin: 1px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 5px;
     display: block;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -206,6 +328,70 @@ html, body {
     color: #0d47a1;
     box-shadow: 24px 26px 23px rgba(0, 0, 0, 0.2);
 }
+.cena {
+    position: absolute;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    right: 50px;
+    font-size: 20px;
+    color: #0000f2; /* Ciemniejszy odcień niebieskiego po najechaniu */
+    text-shadow:
+        1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */
+        4px 4px 2px rgba(0, 0, 0, 0.2); /* Drugi poziom cienia po najechaniu */
+    transform: translateY(-2px); /* Lekkie przesunięcie w górę */
+}
+.cena-bez-promo {
+    position: absolute;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    top: 100px;
+    right: 50px;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #f20000; /* Ciemniejszy odcień niebieskiego po najechaniu */
+    text-shadow:
+        1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */
+        4px 4px 2px rgba(0, 0, 0, 0.2); /* Drugi poziom cienia po najechaniu */
+    transform: translateY(-2px); /* Lekkie przesunięcie w górę */
+}
+.promo {
+    position: absolute;
+    top: 65px;
+    left: 70px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #f20000; /* Ciemniejszy odcień niebieskiego po najechaniu */
+    text-shadow:
+        1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */
+        4px 4px 2px rgba(0, 0, 0, 0.2); /* Drugi poziom cienia po najechaniu */
+    transform: translateY(-2px); /* Lekkie przesunięcie w górę */
+}
+/* Kontener całego menu */
+.menu-container {
+    max-height: 100vh; /* Maksymalna wysokość menu = wysokość okna przeglądarki */
+    overflow-y: auto; /* Włącz przewijanie w pionie, jeśli menu jest za długie */
+    scrollbar-width: thin; /* (Opcjonalnie) Wąski pasek przewijania dla przeglądarek wspierających */
+}
+
+/* Styl dla paska przewijania w Webkit (Chrome, Edge, Safari) */
+.menu-container::-webkit-scrollbar {
+    width: 8px; /* Szerokość paska przewijania */
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+    background-color: #90a4ae; /* Kolor uchwytu paska przewijania */
+    border-radius: 4px; /* Zaokrąglone krawędzie uchwytu */
+}
+
+.menu-container::-webkit-scrollbar-thumb:hover {
+    background-color: #607d8b; /* Ciemniejszy kolor uchwytu po najechaniu */
+}
+
+.menu-container::-webkit-scrollbar-track {
+    background-color: #cfd8dc; /* Tło paska przewijania */
+}
+
 /* Oznaczenie głównego menu*/
 /* Styl dla aktywnej pozycji INSTRUKCJA */
 .menu-title {
@@ -267,8 +453,8 @@ html, body {
 .menu-instrukcja {
     border: 1px solid #dbeafe; /* Cienka jasna ramka */
     border-radius: 6px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 2px;
+    margin-top: 1px;
     background-color: #f8fbff;
 }
 
@@ -281,8 +467,58 @@ html, body {
     text-decoration: none;
 }
 
-
-
+.container-bis {
+    gap: 20px;
+    max-width: 580px;
+    margin: auto;
+    padding: 20px;
+}
+.download-box {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 550px;
+    text-align: left;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download-box h2 {
+    color: #0d47a1;
+    margin: 0px;
+    border-bottom: none;
+}
+.download-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 60px;
+    font-size: 16px;
+    color: white;
+    background: #2e7d32;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.download-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+.download-button img {
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+}
+.separator {
+    margin: 40px 10px 20px;
+    height: 1px;
+    background: #ccc;
+}
 
 .content {
     margin-left: 200px;
@@ -340,7 +576,7 @@ html, body {
 
 /* Stylowanie linku z cieniowaniem liter */
 .shadowed-text {
-    font-size: 24px; /* Dostosuj rozmiar tekstu */
+    font-size: 16px; /* Dostosuj rozmiar tekstu */
     font-weight: bold; /* Pogrubienie tekstu */
     color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
     text-shadow:
@@ -348,9 +584,27 @@ html, body {
         2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
     transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
 }
-
 /* Efekt hover */
 .shadowed-text:hover {
+    color: #0000f2; /* Ciemniejszy odcień niebieskiego po najechaniu */
+    text-shadow:
+        1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */
+        6px 8px 2px rgba(0, 0, 0, 0.2); /* Drugi poziom cienia po najechaniu */
+    transform: translateY(-2px); /* Lekkie przesunięcie w górę */
+}
+/* Stylowanie linku z cieniowaniem liter */
+
+.shadowed-text-b {
+    /*font-size: 12px; /* Dostosuj rozmiar tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    color: #0000f2; /* Kolor tekstu (niebieski jak Facebook) */
+    text-shadow:
+        0px 1px 0px rgba(0, 0, 0, 0.2), /* Cień tekstu */
+        2px 2px 0px rgba(0, 0, 0, 0.1); /* Drugi poziom cienia */
+    transition: all 0.3s ease; /* Płynne przejście dla efektu hover */
+}
+/* Efekt hover */
+.shadowed-text-b:hover {
     color: #0000f2; /* Ciemniejszy odcień niebieskiego po najechaniu */
     text-shadow:
         1px 1px 0px rgba(0, 0, 0, 0.3), /* Zwiększony cień po najechaniu */

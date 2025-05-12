@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="pl">
+<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPIE - Dokumentacja Pomiarów Instalacji Elektrycznych</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="menu-container">
+            <table>
+                <tr><td><center><img src="img/LogoMin2.png" alt="LOGO" width="75"></center></td></tr>
+                <tr><td>
+                    <ul>
+                        <li><a href=index.html>DPIE</a></li>
+                    </ul>
+                </td></tr>
+                <tr><td>
+                    <ul>
+                        <li><a href=instrukcja.html>INSTRUKCJA DPIE</a></li>
+                    </ul>
+                </td></tr>
+                <tr><td> 
+                    <ul >
+                        <li><a href="#rodo">RODO</a> </li>                           
+                          
+                    </ul>                 
+                </td></tr>
+                <tr><td>
+                    <ul>
+                        <li><a href=umowa_licencyjna.html>UMOWA LICENCYJNA</a></li>
+                    </ul>
+                </td></tr>
+                <tr><td>
+                    <ul class="menu-instrukcja">
+                        <li><a href="#badanie" class="toggle-submenu">BADANIE I.E.</a></li>                           
+                        <li class="menu-item">
+                            <a href="#ru">1 BADANIE RU</a>
+                            <ul class="submenu">
+                                <li><a href="#ru-c1">1.1 POMIAR RU METODĄ C1</a></li>
+                                <li><a href="#ru-c2">1.2 POMIAR RU METODĄ C2</a></li>
+                                <li><a href="#ru-c3">1.3 POMIAR RU METODĄ C3</a></li>  
+                            </ul>  
+                        </li> 
+                        <li><a href="#ru-c1">1.1 POMIAR RU METODĄ C1</a></li>
+                        <li><a href="#ru-c2">1.2 POMIAR RU METODĄ C2</a></li>
+                        <li><a href="#ru-c3">1.3 POMIAR RU METODĄ C3</a></li>
+                        <li><a href="#io">2. BADANIE IO</a></li>
+                        <li><a href="#rsp">3. BADANIE RSiP</a></li>
+                        <li><a href="#ipz">4. BADANIE SOP</a></li>
+                        <li><a href="#roz">5. BADANIE ROZDZIELNICY</a></li>
+                        <li><a href="#czasookres">6. CZASOOKRESY</a></li>
+                    </ul>
+                </td></tr>
+            </table>
+        </div>
+    </nav>
+    <div class="content">
+        <section id="rodo">
+            <header>     
+                <p style="font-size:8; text-align: right; padding-right: 10px; font-style:italic">
+                    Ostatnia aktualizacja w dniu 14.02.2025</p>
+                <h1>BADANIE INSTALACJI ELEKTRYCZNYCH</h1>
+                <p>Ogólne informacje z zakresu dokonywania badań i pomiarów instalacji i urządzeń elektrycznych.</p>
+            </header>
+        </section>
+        <div class="container">
+            <div class="section">
+                <h2 id="badanie">DOKUMENTACJA Z BADANIA INSTALACJI</h2>
+                <p>Badanie instalacji energii elektrycznej znajduje się w wielu normach.
+                Norma PN-HD 60364-6 nie jest jedyną na której należy się opierać. Zawiera wiele szczegółów 
+                dotyczących przeprowadzania wymaganych normą badań instalacji elektrycznych, metodologie 
+                pomiarów, formie ich dokumentowania.</p>
+                
+                <p>Dokumentacja z badań instalacji elektrycznej jest dokumentem świadczącym 
+                o stanie instalacji elektrycznej. Stwierdza on, że instalacja i urządzenia 
+                elektryczne badanego obiektu są bezpieczne (lub nie) i nadają się 
+                (lub nie) do użytkowania czy dalszej eksploatacji.</p>
+                
+                <p>Poza dokonywaniem pomiarów instalacji elektrycznej, ważnym elementem jest
+                przeprowadzenie oględzin instalacji, które obejmują sprawdzenie stanu 
+                technicznego, dostępu do ważnych elementów instalacji jak wyłącznik przeciwpożarowy,
+                rozdzielnica. Sprawdzeniu podlega instalacja urządzeń w zgodności z instrukcją producenta
+                oraz widoczny stan instalacji wpływający na bezpieczeństwo urzytkowania.</p>
+        
+                <ul class="check-list"> Oględziny badanego obiektu, przed właściwymi próbami, powinny obejmować w szczególności:
+                    <li>ochronę przeciwporażeniową, zastosowanie środków ochrony, klasy ochronności i stopnie ochrony obudów;</li>
+                    <li>dobór przewodów z uwagi na obciążalność prądową długotrwałą, spadek napięcia i wytrzymałość mechaniczną;</li>
+                    <li>poprawność połączeń przewodów; dobór zacisków do przewodów. W razie wątpliwości zaleca
+                        się pomiar rezystancji połączeń;</li>
+                    <li>identyfikację zacisków urządzeń i zakończeń przewodów oraz identyfikację przewodów kolorami
+                    albo znakami alfanumerycznymi;</li>
+                    <li>opisy identyfikacyjne obwodów zasilających odbiorniki energii elektrycznej i urządzeń
+                zabezpieczających te obwody, stosowanie schematów, napisów ostrzegawczych, itp.;</li>
+                    <li>występowanie i prawidłowe umieszczenie właściwych urządzeń do odłączania izolacyjnego
+                i łączenia;</li>
+                    <li>dobór urządzeń i środków ochrony, właściwych ze względu na wpływy zewnętrzne;</li>
+                    <li>przyłączenie łączników jednobiegunowych do przewodów fazowych;</li>
+                    <li>dostępność urządzeń, umożliwiającą ich identyfikację oraz bezpieczną obsługę.</li>
+                </ul>
+                <p>Wynik oględzin 
+                powinien znajdować się w dokumentacji.</p>    
+                
+                <ul class="check-list">Prace kontrolno-pomiarowe, z uwagi na charakter wykonywanych czynności 
+                    (np. próby i pomiary pod napięciem lub w pobliżu nieosłoniętych części 
+                    czynnych) zalicza się, zgodnie z rozporządzeniem Ministra Gospodarki 
+                    z dnia 28 marca 2013 r. w sprawie bezpieczeństwa i higieny pracy 
+                    przy urządzeniach energetycznych [ Dz.U.2013, poz. 492], 
+                    do prac eksploatacyjnych przy urządzeniach energetycznych 
+                    stwarzających możliwość wystąpienia szczególnego zagrożenia dla zdrowia 
+                    lub życia ludzkiego, do których zalicza się w szczególności prace:
+                    <li>wykonywane w pobliżu nieosłoniętych urządzeń elektroenergetycznych 
+                        lub ich części, znajdujących się pod napięciem;</li>
+                    <li>przy urządzeniach elektroenergetycznych wyłączonych spod napięcia,
+                            lecz uziemionych w taki sposób, że co najmniej jedno uziemienie 
+                            jest widoczne z miejsca wykonywania pracy.</li>
+                </ul>
+
+                <p>Prace kontrolno-pomiarowe wykonywane w warunkach wymienionych w pkt. 1) i 2) powinny być wykonywane 
+                    na podstawie polecenia pisemnego, przez co najmniej dwie osoby w celu zapewnienia asekuracji.</p>   
+                
+                <p>Zgodnie z normą PN-HD 60364-6:2016-07 protokół powinien 
+                    zawierać informacje, które pozwolą powtórzyć badania, oraz 
+                    wyniki badań, wyniki oceny badań i wypływające z nich wnioski, 
+                    a także dane identyfikacyjne osób, które wykonywały badania.</p>
+                    
+                <p>Dokumentacja tworzona programem DPIE spełnia wymagania normy w szablonowej wersji. 
+                Jeśli jednak pewne punkty dokumentacji będą wymagały uzupełnnienia, należy to zrobić
+                przez modyfikację wygenerowanego dokumentu.</p>
+
+                <ul class="check-list"><b>Dokumentacja zawiera:</b>
+                    <li>Stronę początkową dokumentu, która  zawiera:
+                        <br> - Numer dokumentu
+                        <br> - Rodzaj  badania (np. okresowe badanie instalacji)
+                        <br> - Dane Zleceniodawcy
+                        <br> - Dane Sporządzającego pomiary i jego kwalifikacje
+                        <br> - Dane obiektu
+                        <br> - Data badania i wyznaczona data następnego badania
+                        <br> - Dane identyfikujące wykorzystane urządzenia pomiarowe
+                        <br> - Wykaz protokołów
+                        <br> - Wykaz norm
+                    </li> 
+                    <li>Poszczególne protokoły zawierają:
+                        <br> - Nr protokołu
+                        <br> - Imię i nazwisko wykonującego badanie i jego kwalifikacje
+                        <br> - Wyszczególnienie rodzajów badań zamieszczonych w protokole (np. 
+                        badanie rezystancji izolacji kabli energetycznych, badanie wyłącz
+                        ników różnicowoprądowych)
+                        <br> - Wykorzstane do pomiarów przyrządy
+                        <br> - Data wykonania badania
+                        <br> - Typ układu sieci (np. TN-C)
+                        <br> - Wymagane normą parametry pomiarowe: napięcie nominalne, częstotliwość nominalna, napięcie probiercze lub inne
+                        <br> - Wyznaczona data następnego badania
+                        <br> - Warunki środowiskowe istotne dla ptrzeprowadzonego badania
+                        <br> - Dokładne opisy oznaczeń znajdujących się w tabelach z pomiarami,
+                        <br> - Miejsce na podpisy, sporządzającego protokół i zleceniodawcy
+                    </li>
+                    <li>Stronę końcową jako podsumowanie z uwagami oraz oceną końcową i miejscem na podpisy sporządzającego i zleceniodawcy</li>
+                </ul>   
+             <p>W przypadku stwierdzenia usterek lub wyników niespełniających 
+                wymagań norm należy podać numery poszczególnych pozycji pomiarowych 
+                wraz z opisem stwierdzonych nieprawidłowości i ewentualnymi 
+                zaleceniami, które należy zawrzeć na stronach służących do uwag 
+                i komentarzy.</p>
+            <p>Na końcu protokołu należy podać imiona i nazwiska wraz z numerami 
+                świadectw kwalifikacyjnych osób wykonujących pomiary, przynajmniej jeden podpis
+                podpisy osoby wykonującej pomiar z uprawnieniami "SEP D" 
+                oraz podpis osoby otrzymującej protokół.</p>
+            </div>            
+            <div class="section">
+                
+                <h2 id="ru">1 BADANIE REZYSTANCJI UZIEMIENIA</h2>
+                <ul class="check-list"><b></b>Podstawy prawne i normatywne
+                    <li>Prawo budowlane (Dz.U. 2023 poz. 682) obowiązek wykonywania przeglądów instalacji elektrycznej co 5 lat.</li>
+                    <li><b>PN-HD 60364-6:2016</b> wymagania dotyczące badań okresowych.</li>
+                    <li><b>PN-HD 60364-5-54</b> wymagania dotyczące uziemień ochronnych.</li>
+                    <li><b>PN-EN 50522</b> uziemienia w instalacjach elektroenergetycznych.</li>
+                    <li><b>PN-EN 62305</b> ochrona odgromowa.</li>
+                </ul>
+                <p>Pomiary rezystancji uziemienia powinny być wykonywane, uwzględniając warunki klimatyczne, 
+                    w okresie największej rezystywności gruntu, w prowadzone do protokołu wartości powinny 
+                    uwzględnić współaczynnik krotności Kp wskazany w poniższej tabeli.</p>
+                <center>
+                    <table class="tbl-dec" style="border-collapse: collapse;">
+                        <tr style="text-align:center">
+                            <td rowspan="2">Rodzaj uziomu</td>
+                            <td rowspan="2">Rozmiar uziomu</td>
+                            <td rowspan="2">Zmierzona rezystywność gruntu</td>
+                            <td colspan="3">Wartość Kp gruntu w czasie pomiarów</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>suchy 1)</td>
+                            <td>wilgotny 2)</td>
+                            <td>mokry 3)</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td style="text-align:left">Pojedynczy uziom pionowy 4)</td>
+                            <td>l < 30 m</td>
+                            <td>dowolna</td>
+                            <td>1,4</td>
+                            <td>2,2</td>
+                            <td>3,0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td rowspan="4" style="text-align:left">Uziom kratowy 4)</td>
+                            <td rowspan="2">Se < 900 m 2)</td>
+                            <td>ρ &le; 200</td>
+                            <td>1,3</td>
+                            <td>1,8</td>
+                            <td>2,4</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>ρ > 200</td>
+                            <td>1,4</td>
+                            <td>2,2</td>
+                            <td>3,0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td rowspan="2">Se &ge; 900 m 2)</td>
+                            <td>ρ &le; 200</td>
+                            <td>1,1</td>
+                            <td>1,3</td>
+                            <td>1,4</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>ρ > 200</td>
+                            <td>1,2</td>
+                            <td>1,6</td>
+                            <td>2,0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td rowspan="2" style="text-align:left">Uziom pionowy 4)</td>
+                            <td>2,5 &le; l &le; 5m</td>
+                            <td>dowolna</td>
+                            <td>1,1</td>
+                            <td>1,6</td>
+                            <td>2,0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>l > 5 m</td>
+                            <td>dowolna</td>
+                            <td>1,1</td>
+                            <td>1,2</td>
+                            <td>1,3</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td colspan="6" style="text-align:left">
+                                1) w okresie od czerwca do września (włącznie) z wyjątkiem trzydniowych 
+                                okresów po długotrwałych opadach.
+                                <br>2) Poza okresem zaliczonym do 1), z wyjątkiem trzydniowych okresów
+                                 po długotrwałych opadach lub stopieniu się śniegu.
+                                <br>3) W okresie trzech dni po długotrwałych opadach lub stopieniu się śniegu.
+                                <br>4) Głębokośćułożenia uziomu od 0,6 do 1m.
+                            </td>
+                        </tr>    
+                    </table>
+                    </center>
+               
+                <p><b>ρ</b> - rezystywność gruntu – rezystancja właściwa gruntu, czyli rezystancja 
+                wycinka gruntu o kształcie sześcianu, o boku 1 m, mierzona pomiędzy 
+                jego dwoma przeciwległymi bokami, w Ωm.</p>
+
+                <p><b>Normatywne wartości odniesienia przedstawiają poniższe tabele:</b></p>
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                    <tr><td colspan=2><b>1. Norma PN-HD 60364-5-54 określa wymagania dla uziemień w instalacjach elektrycznych niskiego napięcia.
+                        Maksymalna rezystancja uziemienia zależy od systemu sieci:</b></td></tr>
+                    <tr><th>System sieci</th><th>Dopuszczalna rezystancja uziemienia</th></tr>
+                    <tr><td>TN (uziemiony punkt transformatora, przewód ochronny PE)</td><td>
+                        Brak ścisłego limitu, ale zaleca się ≤ 5 Ω</td></tr>
+                        <tr><td>TT (uziemienie ochronne niezależne od uziemienia PEN)</td><td>≤ 30 Ω (o ile skuteczność ochrony przeciwporażeniowej jest zapewniona)</td></tr>
+                        <tr><td>IT (układ izolowany, stosowany w szpitalach, przemysł)</td><td>≥ 50 Ω (w celu ograniczenia prądów upływu)</td></tr>
+                </table>
+                <br>
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                    <tr><td colspan=2><b>2. Uziemienie odgromowe (LPS) - PN-EN 62305-3</b></td></tr>
+                    <tr><th>Klasa ochrony odgromowej</th><th>Dopuszczalna rezystancja uziemienia</th></tr>
+                    <tr><td>Klasa I (najwyższa ochrona, np. elektrownie, rafinerie)</td><td>≤ 10 Ω</td></tr>
+                    <tr><td>Klasa II (budynki użyteczności publicznej)</td><td>≤ 10 Ω</td></tr>
+                    <tr><td>Klasa III-IV (budynki mieszkalne, hale przemysłowe)</td><td>≤ 20 Ω</td></tr>
+                    <tr><td>Budynki z uziomem fundamentowym</td><td>≤ 5 Ω</td></tr>
+                </table>
+                <br>
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                    <tr><td colspan=2><b>3. Uziemienie maszyn i urządzeń – PN-EN 60204-1</b></td></tr>
+                    <tr><th>Rodzaj instalacji</th><th>Dopuszczalna rezystancja</th></tr>
+                    <tr><td>Silniki, szafy sterownicze</td><td>≤ 10 Ω</td></tr>
+                    <tr><td>Urządzenia informatyczne, serwery</td><td>≤ 1 Ω</td></tr>
+                    <tr><td>Uziemienie ekranów kabli sterowniczych</td><td>≤ 1 Ω</td></tr>
+                    <tr><td colspan=2>Serwerownie i centra danych wymagają bardzo niskiej rezystancji uziemienia (typowo ≤ 1 Ω), aby uniknąć zakłóceń EMC.</td></tr>
+                </table>
+                <br>
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                    <tr><td colspan=2><b>4. Uziemienie elektrostatyczne – PN-EN 60079-32-1</b></td></tr>
+                    <tr><th>Rodzaj instalacji</th><th>Dopuszczalna rezystancja</th></tr>
+                    <tr><td>Uziemienie zbiorników paliw, cystern</td><td>≤ 10 Ω</td></tr>
+                    <tr><td>Uziemienie przewodów paliwowych</td><td>≤ 1 Ω</td></tr>
+                    <tr><td>Stacje paliw, rafinerie</td><td>≤ 10 Ω</td></tr>
+                </table>
+                <p><b>METODY POMIARÓW</b></p>
+                <h2 id="ru-c1">1.1 POMIAR REZYSTANCJI UZIEMIENIA METODĄ C1</h2>
+                <p>W załącznikach B do norm PN-IEC 60364-6-61 [12] i PN-HD 60364-6 [13] podano opis 
+                    sposobu sprawdzenia poprawności przeprowadzania pomiaru rezystancji uziemienia 
+                    uziomu przy użyciu dwóch dodatkowych położeń uziomu pomocniczego - sondy napię
+                    ciowej, oraz warunki, które powinny być spełnione podczas sprawdzania. </p>
+                    <center>
+                        <div class="image-frame">
+                            <img src="img\metoda_c1.png">
+                        </div>
+                    </center>    
+                <p>Rezystancja uziomu liczona jest ze wzoru Ru = U / Ia, gdzie:
+                    <br> Ru - rezystancja uziomu,
+                    <br> Ia - prąd przepływający między elektrodą T i T2 
+                    <br> U - napięcie przyłożone do elektorydy T i T2 </p>     
+
+                <p>Pomiar wymaga, aby zapewnić dodstateczną odległość pomiędzy elektrodą napięciową T2 
+                    (nie mniej niż 20 m), 
+                    a badanym punktem uziomu T oraz między elektrodą napięciową T2, a elektrodą prądową T1 
+                    (najdalej odsunietą w linii z elektrodą napięciową T2, choć to nie jest reguła).
+                    Należy zapewnić równe odległości między trzema punktami.</p>
+                <p>Na odległość wpływ mają okoliczne bednarki, części metalowe w ziemi, układ uziemienia sąsiadujący budynków.</p>
+                <p>Za prawidłową odległość i wiarygodny wynik można uznać odległość, przy której wynik pomiaru rezystancji 
+                    jest zbliżony do wyniku pomiarów rezystancji przy przesunięciu o 6 metrów elektrody napięciowej T2 
+                    w kierunku elektrody badanej T i następnie w kierunku elektrody T2. Jeśli pomiar dla pomiarów w tych 
+                    położeniach jest zbliżony do siebie, to wynik pomiaru można uzać za prawidłowy.</p> 
+                <p> Wynika to z charakterystyki rozkładu napięcia w ziemi, który prezentuje poniższa ilustracja.</p>
+                <center>
+                    <div class="image-frame">
+                        <img src="img\ru3p.jpg">
+                    </div>
+                </center>
+                <p>Dla pomiarów rezystancji uziemień w układach wysokonapięciowej aparatury rozdzielczej i sterowniczej, wykonywanych specjalistycznymi przyrządami wymuszającymi małe prądy pomiarowe, odległość sondy napięciowej (Sn) od uziomu badanego Rx powinna być co najmniej 2,5 razy większa od największego terenu zajętego przez układ uziomowy (odniesiona do kierunku pomiaru), ale nie mniejsza niż 20 metrów,
+                     a odległość elektrody prądowej – co najmniej 4 – krotnie większa, ale nie mniejsza niż 40 m.</p>
+                <ul class="del-list">Wobec powyższego można wyliczyć następujące wady metody technicznej:
+                    <li>konieczność stosowania obcego źródła zasilania o stosunkowo dużej mocy,</li>
+                    <li>konieczność montażu układu pomiarowego,</li>
+                    <li>możliwość wpływu prądów błądzących na wynik pomiaru.
+                </ul>
+                <p>Poniższa tabela przedstawia możliwy sposób rozmieszczenia sond w zależności od sytemu uziemienia i minimalne odległości między sondami.</p>
+                <center>
+                    <div class="image-frame">
+                        <img src="img\ruodll.png">
+                    </div>
+                </center>
+            </div>
+            <div class="section">
+            <h2 id="ru-c2">1.2 POMIAR REZYSTANCJI UZIEMIENIA METODĄ C2</h2>
+                <p>W przypadku, gdy nie mam możliwości odpowiedniego rozmieszczenia elektrod metodą 3-przewodową,
+                     możemy skorzystać z zapisów normy <b>PN-HD 60364-6:2016-07</b> - do pomiaru uziemienia metodą 
+                     impedancji pętli zwarcia miernikiem do pomiaru impedancji zwarcia.</p>
+                <p>Wpływ impedancji linii w impedancji zwarcia jest pomijalnie mały i spełnia wymagania dokładności pomiaru</p>     
+                <p>Dla bardziej dokładnego wynku pomiaru powinniśmy uwzglednić wpływ impedancji uzwojeń wtórnych transformatora 
+                    oraz rezystancji przewodów do miejsca wykonanego pomiaru. Wykonanie pomiaru impedancji zwarcia 
+                    na linii L-N powinniśmy odjąć od wartości pomiaru rezystancji uziemienia w badanym punkcie uziemieniametodą c2. 
+                    Jeśli miernik zmierzy składową rezystcyjną R i składową reaktancyjną impedancji XL pętli zwarcia, wówczas
+                Od rezystancji uziemienia odejmujemy połowę wartości R i całkowitą wartość XL.</p>     
+            </div>
+            <div class="section">
+                <h2 id="ru-c3">1.3 POMIAR REZYSTANCJI UZIEMIENIA METODĄ C3</h2>
+                <p>Do tej kategorii zaliczają się metody cęgowa i dwucęgowa</p> 
+                <p><b>Metoda dwucęgowa - (lub cęgowa przy użyciu specjalnych cęgów pełniących rolę dwóch)</b></p>
+                <p>Norma PN-HD 60364-6:2008 [13] podaje metodę B3 - pomiaru rezystancji pętli uziemienia 
+                    z użyciem zacisków prądowych. Metoda ta ma zastosowanie do istniejących pętli 
+                    uziemienia w obrębie kratowego układu uziemiającego, jak na rysunku.</p>
+                <center>
+                    <div class="image-frame">
+                        <img src="img\metoda_cegowa.png">
+                    </div>
+                </center>                
+                <p>Tradycyjna metoda pomiaru uziemień wymaga rozpięcia złącza kontrolnego i użycia pomocniczych sond pomiarowych.
+                    W sytuacjach, gdy metoda techniczna może być trudna do zrealizowania, ta metoda może być wygodną alternatywą.</p>
+
+                <p>W przypadku pomiaru metodą dwucęgową jedne cęgi stanowią obwód nadawczy, 
+                    który indukuje w badanym systemie uziemiającym sygnał pomiarowy o zadanej 
+                    częstotliwości, drugie cęgi mierzą wartość wyindukowanego prądu, na podstawie
+                    którego wyliczana jest wartość rezystancji/impedancji pętli uziemiającej, 
+                    według wzoru Rx=U/I.</p>
+                <p> Ponieważ wypadkowa wartość połączonych równolegle rezystancji R1 ... Rn jest 
+                    zwykle pomijalna, nieznan rezystancja jest równa zmierzonej rezystancji pętli 
+                    lub jest nieznacznie mniejsza.
+                </p>
+                <p>Metodę tą stosuje się bezpośrednio do układów TN oraz w uziemieniach kratowych układów TT. W układach TT, 
+                    w których dostępne jets tylko nieznane połączenie z ziemią, pętla podczas pomiaru może być 
+                    zamknięta krótkotrwałym połączeniem między uziomem, a przewodem neutralnym</p>
+                <p>Na zwód zakładamy dwie pary cęgów (nadawcze i odbiorcze). Ważna jest kolejność zakładanych cęgów według ich znaczenia.
+                    Warunkiem skuteczności pomiaru jest zamknięty obwód elektryczny - zwody podłączone do uziomu w niprzerwalnym obwodzie.</p>
+                
+                <p>Metoda niezbyt dokładna, ale dopuszczona normą PN-HD 60364-6 i bardzo wygodna. 
+                    Pomiar różni się o około 30% w stosunkudo pomiaru metodą techniczną.</p> 
+                <p><b>W celu uniknięcia ryzyka spowodowanego prądami powstałymi na skutek 
+                    różnicy potencjałów między przewodem neutralnym a ziemią, układ powinien 
+                    być wyłączony podczas przełączania i odłączania zacisków</b></p>
+            </div>
+
+            <div class="section">
+                <h2 id="io">2. BADANIE INSTALACJI ODGROMOWEJ</h2>
+                    <p>Podstawa prawna i normy odniesienia (np. <b>PN-EN 62305</b>, <b>PN-EN 50164</b>, <b>PN-HD 60364-6</b>)</p>
+                    <ul class="check-list"><b></b>Podstawy prawne i normatywne
+                        <li>Prawo budowlane (Dz.U. 2023 poz. 682) obowiązek wykonywania przeglądów instalacji elektrycznej co 5 lat.</li>
+                        <li><b>PN-HD 60364-6:2016</b> Szczegółowe wymagania dotyczące pomiarów rezystancji uziemienia.</li>
+                        <li><b>PN-HD 60364-5-54</b> wymagania dotyczące uziemień ochronnych.</li>
+                        <li><b>PN-EN 50522</b> uziemienia w instalacjach elektroenergetycznych.</li>
+                        <li><b>PN-EN 62305-1:2011</b> – Ochrona odgromowa — Część 1: Zasady ogólne oraz
+                        <li><b>PN-EN 62305-2:2012</b> – Ochrona odgromowa — Część 2: Zarządzanie ryzykiem,
+                        zawierają opisy uszkodzeń i strat powodowanych przez piorun, klasyfikację poziomów ochrony
+                        odgromowej oraz parametry pioruna. Zdefiniowane zostało również pojęcie impedancji uziemienia.
+                        W dalszych wprowadzonych normach:</li>
+                        <li><b>PN-EN 62305-3:2011</b> Ochrona odgromowa. Część 3: Uszkodzenia fizyczne obiektów i zagrożenie życia oraz</li>
+                        <li><b>PN-EN 62305-4:2011</b> Ochrona odgromowa. Część 4: Urządzenia elektryczne i elektroniczne w obiektach,
+                             zostały określone wymagania i sposoby praktycznych realizacji, które dotyczą projektowanych systemów 
+                             ochrony odgromowej, metody konserwacji i weryfikacji poprawności montażu.</li>
+                    </ul>
+                    <ul class="check-list"><b>Oględziny instalacji odgromowej:</b>
+                        <li>Stan przewodów odprowadzających (korozja, połączenia, uszkodzenia mechaniczne).</li>
+                        <li>Stan zwodów (czy są kompletne, czy nie są uszkodzone, czy są prawidłowo zamocowane).</li>
+                        <li>Stan zacisków kontrolnych (czy są dostępne, czy nie są skorodowane).</li>
+                        <li>Stan połączeń wyrównawczych i uziemienia (czy są odpowiednio połączone).</li>
+                        <li>Stan zabezpieczeń przepięciowych (jeśli występują).</li>
+                        <li>Ciągłość przewodów odprowadzających (pomiar ciągłości).</li>
+                    </ul>
+                    <ul class="check-list"><b>Normatywne wartości rezystancji uziemienia:</b>
+                        <li>Wg normy <b>PN-EN 62305</b> rezystancja uziemienia instalacji odgromowej powinna wynosić maksymalnie 10 Ω.</li>
+                        <li>Jeśli obiekt ma uziemienie połączone z siecią uziemiającą obiektu, dopuszcza się wyższą wartość, 
+                            jednak nie powinna ona przekraczać 30 Ω (w zależności od podłoża).</li>
+                    </ul>
+                    <ul class="check-list"><b>Pomiar rezystancji połączeń wyrównawczych:</b>
+                        <li>Sprawdzenie ciągłości połączeń między zwodami, przewodami odprowadzającymi i uziemieniem.</li>
+                        <li>Pomiar wykonuje się miernikiem małych rezystancji.</li>
+                        <li>Wartość rezystancji powinna być bliska zeru (≤ 0,2 Ω).</li>
+                    </ul>        
+                    
+            </div> 
+            <div class="section">
+                <h2 id="rsp">3. BADANIE REZYSTANCJI ŚCIAN I PODŁÓG</h2>
+                <p>Stara norma PN-IEC 60364-6-61 [12] wymagała, aby pomiary rezystancji podłóg ]
+                i ścian wykonywać prądem stałym. </p>
+                <center>
+                    <div class="image-frame">
+                        <img src="img\prisp_s.png">
+                    </div>
+                </center>   
+                <p>Norma PN-HD 60364-6:2008 [13] zaleca wykonywanie pomiaru rezystancji, a 
+                właściwie impedancji stanowiska prądem przemiennym.</p>
+                <center>
+                    <div class="image-frame">
+                        <img src="img\rips.png">
+                    </div>
+                </center>                   
+                <p> Przy tym pomiarze Impedancję stanowiska obliczamy według Zx = Ux/I</p>
+                    
+            </div>
+            <div class="section">
+                <h2 id="sop">4. SKUTECZNOŚCI OCHRONY PRZECIWPORAZENIOWEJ</h2>
+                <p>Podczas uszkodzenia instalacji elektrycznej, wystąpienia upływu prądu roboczego 
+                np. na obudwę urządzenia lub elementy nośne przewodów norma przewiduje zabezpieczenie 
+                przed porażeniem przez stosowanie wyłączników nadprądowych i różnicowoprądowych. 
+                Urządzenia te powinny odłaczyć uszkodzony obiekt w ustalonym w normie czasie.</p>
+
+                <ul>Ochrona przy uszkodzeniu przez samoczynne wyłączenie zasilania jest skuteczna 
+                    wtedy, jeżeli w razie zwarcia L-PE (L-PEN):
+                    <li> a) urządzenie ochronne samoczynnie wyłączy zasilanie instalacji w wymaganym czasie lub</li>
+                    <li> b) nie zostały przekroczone wartości napięcia dotykowego dopuszczalnie długotrwałego UL.</li>
+                </ul>
+
+                <p><b>Maksymalne czasy wyłączenia dla normalnych warunków środowiskowych.</b></p>
+                
+                <center><div class="image-frame">
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                    <tr>
+                        <td rowspan="2">Układ sieci</td>
+                        <td colspan="2" style="text-align: center;">50 V < Uo ≤ 120 V <br>[s]</td>
+                        <td colspan="2" style="text-align: center;">120 V < Uo ≤ 230 V <br>[s]</td>
+                        <td colspan="2" style="text-align: center;">230 V < Uo ≤ 400 V <br>[s]</td>
+                        <td colspan="2" style="text-align: center;">Uo > 400 V <br>[s]</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>AC</td><td>DC</td>
+                        <td>AC</td><td>DC</td>
+                        <td>AC</td><td>DC</td>
+                        <td>AC</td><td>DC</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>TN</td>
+                        <td>0,8</td><td>*</td>
+                        <td>0,4</td><td>1 (5)</td>
+                        <td>0,2</td><td>0,4</td>
+                        <td>0,1</td><td>0,1</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>TT</td>
+                        <td>0,3</td><td>*</td>
+                        <td>0,2</td><td>0,4</td>
+                        <td>0,07</td><td>0,2</td>
+                        <td>0,04</td><td>0,1</td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td colspan="9">
+                            <b>*</b> - wyłączenie może być wymagane z innych powodów niż zagrożenie porażeniem
+                            <br><b>Uo</b> - napięcie instalacji względem ziemi
+                            <br> W nawiasie podano czas wymagany przez normę PN-HD 60364-4-41:2009
+                        </td>
+                    </tr>
+                </table>
+                </div></center>
+                <ul>Czasy wyłączenia podane w tabeli obowiązują w obwodach:
+                    <li>a) Gniazd wtyczkowych o prądzie znamionowym nie większym niż 63 A,</li>
+                    <li>b) Odbiorników zainstalowanych na stałe o prądzie znamionowym nie większym niż 32 A.</li>
+                    <li>c) W układach sieci TN czas wyłączenia nieprzekraczający 5 s jest dopuszczony w obwodach rozdzielczych i w obwodach niewymienionych w pkt b)</li>
+                    <li>d) W układach sieci TT czas wyłączenia nieprzekraczający 1 s jest dopuszczony w obwodach rozdzielczych i w obwodach niewymienionych w pkt b)</li>
+                    <li>e) Jeżeli samoczynne wyłączenie zasilania nie może być uzyskane we właściwym czasie, to powinny być zastosowane dodatkowe połączenia wyrównawcze ochronne.</li>
+                </ul>
+                <b> Co z obwodami SELV, PELV, FELV?</b>
+                <P>
+                    Obwody SELF, PELV i FELV, to bwody pracujące na bezpiecznym (niskim) napięciu roboczym określonym normą <b>PN-EN 61140:2016-07</b> zgodnie z poniższą tabelą
+                </P>
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                    <tr><td>Rodzaj napięcia</td><td>SELV / PELV (sucha skóra)</td><td>SELV / PELV (warunki zwiększonego ryzyka, wilgoć, metalowe powierzchnie)</td></tr>
+                    <tr><td>Prąd przemienny (AC, 50 Hz – 60 Hz)</td><td>50 V</td><td>25 V</td></tr>
+                    <tr><td>Prąd stały (DC)</td><td>120 V</td><td>60 V</td></tr>
+                </table>    
+
+                <ul class="check-list"> Norma <b>PN-HD 60364-4-41</b> delfiniuje:
+                    <li>
+                        <b>SELV</b> (Separated Extra-Low Voltage) – odseparowany układ bardzo niskiego napięcia, bez połączenia z ziemią.
+                    </li>
+                    <li>
+                        <b>PELV</b> (Protective Extra-Low Voltage) – bardzo niskie napięcie ochronne, które może mieć połączenie z ziemią.
+                    </li>
+                    <li>
+                        <b>FELV</b> (Functional Extra-Low Voltage) – funkcjonalne bardzo niskie napięcie, które nie jest w pełni bezpieczne i wymaga dodatkowej ochrony.
+                    </li>
+                </ul>
+                <p>Napięcie bezpieczne w obwodzie uzyskuje się przez stosowanie transformatorów separacyjnych (zgodnych z normą zgodny z normą PN-EN 61558-2-6:2009) 
+                    w przypadku zasilania z sieci lub innych źródeł takic jak akumulatory, źródła prądotwórcze niezależne od sieci wyższego napięcia,...
+                    Transformatory separacyjne muszą spełniać wymagania normy, szczególnie ważne w zakresie ochrony przez wzmocnioną separację izolacyjną między
+                    uzwojeniem pierwotnym i wtórnym transformatora (separacja galwaniczna). W przypadku braku separacji galwanicznej mowa jest o obwodach FELV</p>
+                <ul class="check-list">W obwodach FELV istnieje większe ryzyko przebicia napięcia 230 V 
+                    na obwód FELV. W związku z tym dodatkowo należy stosować:
+                <li>izolację adekwatną do napięcia nominalnego obwodu pierwotnego źródła zasilania lub stoswanie trwałych przegród lub odudów (IP conajmniej 2X)</li>
+                <li>części przewodzące dostępne w obwodach FELV należy połączyć z przewodem ochronnym obwodu pierwotnego, jeśli została w nim zastosowana ochrona
+                    przez samoczynne wyłączenie zasilania</li>
+                <li>jeśli została zastosowana ochrona przez separację elektryczną należy połączyć części przewodzące dostępne urządzeń w danym obwodzie FELV 
+                    z nieuziemionym miejscowym przewodem połączeń wyrównaczych obwodu pierwotnego.</li>
+                </ul>
+                <ul class="check-list"><b>Sepparacja elektryczna</b> jest środkiem ochronnym, w którym:
+                <li>ochrona podstawowa jest zapewniona przez izolację podstawową części czynnych lub przegrody i obudowy – zgodnie z Załącznikiem A normy PN-HD 60364-4-41 natomiast</li>
+                <li>ochrona przy uszkodzeniu jest zapewniona przez separację podstawową obwodu od innych obwodów i od ziemi.</li>    
+            </ul>
+                <p><b>4.1 BADANIE SKUTECZNOŚCI OCHRONY PRZECIWPORAŻENIOWEJ WYŁĄCZNIKI RÓŻNICOWOPRĄDOWE</b></p>
+                
+                <p><b>Gdy do ochrony przy uszkodzeniu (ochrony przy dotyku pośrednim) 
+                jest stosowany wyłącznik różnicowoprądowy RCD, wówczas obwód 
+                musi być też chroniony przez urządzenie nadprądowe zgodnie z PN IEC 60364-4-43.</b></p>
+                <ul class="check-list"><b>Ponadto muszą być spełnione dwa warunki:</b>
+                    <li>czas samoczynnego wyłączenia powinien być zgodny z wartościami 
+                        postawionymi w normie PN HD 60364-4-41 – punkty: 411.3.2.2 lub 
+                        411.3.2.4.</li>
+                    <li>RA × IΔn < 50 V, gdzie RA jest sumą rezystancji uziemienia i przewodu 
+                        ochronnego do części przewodzących dostępnych, IΔn jest znamionowym 
+                        prądem różnicowym RCD w A.</li>
+                </ul>
+                <p>Jeśli RA nie jest znane, może być zastąpione przez Zs i warunek Zs × Ia 
+                    < 230 V, co jest opisane w protokole.</p>
+                
+                <b>BADANIE IMPEDANCJI PĘTLI ZWARCIA</b>
+                <p>Zgodnie z wymaganiami normy PN-HD 60364-6:2008 [13] przy pomiarze impedancji pętli 
+                zwarciowej w niskiej temperaturze przy małych prądach przewiduje się uwzględnianie 
+                wzrostu rezystancji przewodów ze wzrostem temperatury spowodowanej zwarciem, aby zmierzona 
+                wartość impedancji pętli zwarciowej spełniała wymagania normy. Wymagania te uważa się 
+                za spełnione, jeżeli zmierzona wartość impedancji pętli zwarciowej spełnia zależność</p>
+                <center>
+                    <div class="image-frame">
+                        <img src="img\ipz.png">
+                    </div>
+                </center>                       
+            
+            <p><b>Jak prawidłowo dobrać współczynnik <i>k</i> uwzględniający warunki atmosferyczne przy wyliczaniu impedancji 
+                zadziałania wyłącznika w określonym czasie, zgodnie z polskimi normami, takimi jak PN-HD 60364-4-41 czy PN-EN 60909.</b></p>
+
+            <b>Współczynnik <i>k</i> w kontekście warunków atmosferycznych:</b>
+            <p>Współczynnik k w obliczeniach impedancji pętli zwarcia lub impedancji zadziałania wyłącznika 
+                (np. dla zabezpieczeń nadprądowych lub różnicowoprądowych) jest używany do uwzględnienia zmiennych warunków,
+                 takich jak temperatura, wilgotność czy inne czynniki środowiskowe. W praktyce współczynnik ten koryguje
+                  rezystancję przewodów i połączeń, które mogą zmieniać się w zależności od warunków atmosferycznych.</p>
+
+            <p>Wzór na impedancję pętli zwarcia, uwzględniający współczynnik k, może wyglądać następująco:</p>
+
+            <p>Zs = k * R + Z
+
+            <ul class="check-list">gdzie:
+
+                <li>Zs – impedancja pętli zwarcia,</li>
+                <li>R – rezystancja przewodów (fazowego i ochronnego),</li>
+                <li>Z - impedancja źródła (np. transformatora lub sieci),</li>
+                <li><i>k</i> – współczynnik korygujący, uwzględniający warunki środowiskowe.</li>
+            </ul></p>
+            <div class="section">
+                <p><b>4.2 DOBÓR WSPÓŁCZYNNIKA <i>k</i> DO PROTOKOŁU:</b></p>
+                <p><b>4.2.1. Wpływ temperatury na rezystancję przewodów:</b></p>
+                <ul class="check-list">
+                    <li>Rezystancja przewodów miedzianych i aluminiowych zmienia się liniowo z temperaturą. Współczynnik temperaturowy rezystancji
+                    dla miedzi wynosi około 0,00393 na stopień Celsjusza, a dla aluminium około 0,00403.</li>
+                    <li>Wzór na rezystancję przewodu w danej temperaturze:
+                        <br>R<sub>T</sub> = R<sub>20</sub> * [1 + α * (T - 20)]
+                        <ul class="check-list">gdzie:                
+                            <li>R<sub>T</sub> – rezystancja w temperaturze ( T ),</li>
+                            <li>R<sub>20</sub> – rezystancja w temperaturze odniesienia 20°C,</li>
+                            <li>α – współczynnik temperaturowy (dla miedzi: 0,00393, dla aluminium: 0,00403),</li>
+                            <li>T – temperatura przewodu w °C.</li>
+                            <li>Współczynnik k w tym przypadku wynosi:<br>
+                                k = 1 + α * (T - 20)</li>
+                        </ul>
+                    <li>W protokole należy podać temperaturę zmierzoną podczas badania i zastosowany współczynnik (k). 
+                        Jeśli temperatura jest nieznana, przyjmuje się warunki standardowe (20°C), co oznacza (k = 1).
+                    </li>
+                </ul>
+                <p><b>4.2.2. Wilgotność i inne warunki atmosferyczne:</b></p>
+                <ul class="check-list">
+                    <li>Wysoka wilgotność lub obecność wody może obniżyć rezystancję izolacji, ale nie wpływa bezpośrednio na rezystancję przewodów.
+                        W takich przypadkach współczynnik ( k ) nie jest korygowany dla wilgotności, ale należy odnotować warunki w protokole i
+                        ewentualnie powtórzyć pomiary w suchych warunkach.
+                    </li>
+                    <li>W przypadku pomiarów w instalacjach zewnętrznych, gdzie wilgoć może wpływać na połączenia (np. korozja styków),
+                        należy uwzględnić potencjalne zwiększenie rezystancji styków. W takich sytuacjach współczynnik ( k ) może być zwiększony o 
+                        wartości empiryczne (np. 1,1–1,2), ale musi to być uzasadnione w protokole.
+                    </li>
+                </ul>
+                <p><b>4.2.3. Normy i wytyczne:</b></p>
+                <ul class="check-list">
+                    <li>PN-HD 60364-4-41 (ochrona przed porażeniem elektrycznym) oraz PN-EN 60909 (obliczenia prądów zwarciowych) wskazują, 
+                        że obliczenia powinny uwzględniać maksymalne i minimalne warunki eksploatacji. Współczynnik k powinien być dobrany 
+                        na podstawie:
+                        <ul>
+                            <li>Najwyższej spodziewanej temperatury przewodów (np. 70°C dla przewodów w izolacji PVC),</li>
+                            <li>Najniższej temperatury otoczenia (np. -5°C lub niższej w warunkach zimowych).</li>
+                        </ul>
+                        W praktyce, dla obliczeń maksymalnej impedancji pętli zwarcia (warunki najgorsze), przyjmuje się ( k ) 
+                        dla temperatury maksymalnej, a dla minimalnej impedancji – k dla temperatury minimalnej.
+                    </li>
+                </ul>
+                <p><b>4.2.4. Praktyczne podejście do doboru k :</b></p>
+                <ul class="check-list">
+                    <li><b>Pomiar w warunkach standardowych</b>: Jeśli pomiary są przeprowadzane w temperaturze zbliżonej do 20°C, przyjmuje się ( k = 1 ).</li>
+                    <li><b>Pomiar w niskiej temperaturze</b>: Jeśli temperatura otoczenia wynosi np. -5°C, a przewody są miedziane, współczynnik ( k ) wynosi:<br>
+                        k = 1 + 0,00393 * (-5 - 20) = 1 - 0,09825 = 0,90175<br>
+                        W protokole należy podać temperaturę i zastosowany współczynnik.
+                    </li>
+                <li><b>Pomiar w wysokiej temperaturze</b>: Jeśli temperatura otoczenia wynosi np. 40°C, współczynnik k wynosi:<br>
+                    k = 1 + 0,00393 * (40 - 20) = 1 + 0,0786 = 1,0786
+                    </li>
+                <li><b>Ekstremalne warunki</b>: W przypadku pomiarów w ekstremalnych warunkach (np. deszcz, wilgoć, sól), 
+                    należy odnotować te warunki w protokole i rozważyć powtórzenie pomiarów w standardowych warunkach. 
+                    Współczynnik ( k ) nie jest wtedy korygowany dla wilgoci, ale uwzględnia się potencjalne błędy.
+                    </li>
+                </ul>
+                <p><b>4.2.5. Protokół :</b></p>
+
+                <ul class="check-list">
+                    <li>
+                        W protokole z badań należy podać:
+                        <ul>
+                            <li>Zmierzoną temperaturę otoczenia i/lub przewodów,</li>
+                            <li>Zastosowany współczynnik k i jego uzasadnienie (np. obliczenia dla temperatury),</li>
+                            <li>Informacje o innych warunkach atmosferycznych (wilgotność, opady, zanieczyszczenia),</li>
+                            <li>Ewentualne uwagi dotyczące potencjalnego wpływu warunków na wyniki (np. konieczność powtórzenia pomiarów).</li>
+                        </ul>
+                    </li>
+                    <li>Jeśli warunki atmosferyczne mogły zafałszować wyniki, należy to wyraźnie zaznaczyć.</li>
+                </ul>
+
+                <p><b>4.2.6 PODSUMOWANIE:</b></p>
+
+                <ul class="check-list">
+                    <li>Współczynnik k jest głównie zależny od temperatury i oblicza się go na podstawie współczynnika temperaturowego 
+                        rezystancji przewodów α.</li>
+                    <li>Wilgotność i inne warunki atmosferyczne nie koryguje się bezpośrednio przez k, ale wymagają odnotowania w protokole i 
+                        mogą wpływać na konieczność powtórzenia pomiarów.
+                    </li>
+                    <li>W protokole należy podać zmierzoną temperaturę, zastosowany współczynnik k oraz wszelkie uwagi dotyczące warunków atmosferycznych, 
+                        aby zapewnić przejrzystość i zgodność z normami.
+                    </li>
+                    <li>
+                        W przypadku wątpliwości co do wpływu warunków atmosferycznych, zaleca się przeprowadzenie pomiarów w standardowych warunkach 
+                        (20°C, sucha pogoda) lub zastosowanie wartości maksymalnych/minimalnych dla k, zgodnie z normami.
+                    </li>
+                </ul>
+                <p>Dzięki temu podejściu protokół będzie zgodny z wymaganiami polskich norm, a wyniki będą wiarygodne i powtarzalne.</p>                
+            </div>
+
+            </div>
+            <div class="section">
+                <h2 id="roz">5. BADANIE REZYSTANCJI IZOLACJI</h2>
+                <p ALIGN="JUSTIFY">Rezystancja izolacji może być rozpatrywana przy wykorzystaniu prawa
+                    Ohma. Mierzona rezystancja wyznaczana jest na podstawie podzielenia przyłożonego
+                    napięcia przez płynący prąd. </p>
+                    
+                    <p ALIGN="JUSTIFY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; V<br>
+                    R = ——-<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I</p>
+                    
+                    <p ALIGN="JUSTIFY">Występują tu dwa dodatkowe ważne czynniki, które powinny być
+                    uwzględnione. </p>
+                    
+                    <p ALIGN="JUSTIFY">Są to:</p>
+                    
+                    <ul>
+                      <li>charakter prądu płynącego przez i po izolacji,</li>
+                      <li>czas jaki upłynął od chwili przyłożenia napięcia.</li>
+                    </ul>
+                    
+                    <p ALIGN="JUSTIFY">Te dwa czynniki łączą się ze sobą. </p>
+                    
+                    <p ALIGN="center">
+                    <img src="images/rez_izo1.gif" alt="Składowe prądu" border="3" style="border: 4px outset #C0C0C0" width="500" height="375"></p>
+                    
+                    <p ALIGN="JUSTIFY">Całkowity prąd jest sumą trzech prądów składowych.</p>
+                    
+                    <ol>
+                      <li>Prąd ładowania pojemności. Prąd ten jest początkowo duży i spada w miarę jak
+                        ładowana jest pojemność.</li>
+                      <li>Prąd absorpcji. Prąd ten jest również początkowo duży ale spada w dużo
+                        wolniejszym tempie niż prąd ładowania pojemności.</li>
+                      <li>Prąd przewodzenia lub upływności. Jest to mały ustalony prąd, z którego można
+                        wydzielić dwie składowe:</li>
+                    </ol>
+                    
+                    <blockquote>
+                      <ul>
+                        <li>prąd płynący wzdłuż ścieżek przewodzących przez materiał izolacji 
+                        (upływność skrośna),</li>
+                        <li>prąd płynący wzdłuż ścieżek przewodzących po powierzchni materiału izolacji 
+                        (upływność powierzchniowa).</li>
+                      </ul>
+                    </blockquote>
+                    
+                    <p ALIGN="JUSTIFY">Tak więc, całkowity prąd zależy od czasu przez który przykładane
+                    jest napięcie do badanej izolacji. Prawo Ohma ma teoretycznie zastosowanie 
+                    dopiero po czasie
+                    nieskończonym.</p>
+                    
+                    <p ALIGN="JUSTIFY">Prąd ładowania spada relatywnie szybko po tym, jak obiekt badany
+                    naładuje się. Faktyczna długość czasu zależy od wielkości pojemności badanego
+                    obiektu.</p>
+                    
+                    <p ALIGN="JUSTIFY">Duże obiekty z większą pojemnością ładują się dłuższy czas,
+                    na przykład długie kable energetyczne. Prąd absorpcji maleje relatywnie wolniej w
+                    porównaniu z prądem ładowania pojemności. Wynika to z natury zjawisk fizycznych
+                    zachodzących w materiałach izolacyjnych.</p>
+                    
+                    <p ALIGN="JUSTIFY">Prądy przewodzenia lub upływu narastają szybko do pewnej
+                    stałej wartości i pozostają stałe dla danego, niezmiennego napięcia probierczego.
+                    Prąd ten jest wynikiem istnienia: wilgoci, zabrudzeń itp., które wpływają na jakość
+                    izolacji, oraz w konsekwencji na wartość zmierzonej rezystancji izolacji. Zwiększenie
+                    prądu upływu wskazuje na możliwość przyszłych kłopotów.</p>
+                    
+                    <p ALIGN="JUSTIFY"></font><a name="Pomiar chwilowy"><font FACE="Arial" 
+                            color="#FFFF00"><em><strong>Pomiar
+                    chwilowy</strong></em></font></a><font FACE="Arial" SIZE="2"></p>
+                    
+                    <p ALIGN="JUSTIFY">W trybie tym przeprowadzana jest natychmiastowa kontrola stanu
+                    izolacji. Jest to najprostsze badanie izolacji, dające w wyniku wartość rezystancji
+                    izolacji w M<font FACE="Symbol" SIZE="2">W</font>. Badanie jest stosowane przez krótki,
+                    ale określony okres czasu. Natychmiast po nim dokonywany jest odczyt. Czas ten typowo
+                    wynosi 30 lub 60 sekund. Niektóre mierniki umożliwiają ustawienie tego czasu, wówczas pomiar kończy się automatycznie. Nie 
+                    jest konieczne, aby wynik był wartością maksymalną. Jeżeli ten sam czas jest 
+                    stosowany dla każdego pomiaru, wówczas porównywany jest ten sam punkt na krzywej 
+                    wzrastającej rezystancji. Podczas instalacji obiektu odczyty te będą porównywane 
+                    z minimalnymi, wymaganymi przez specyfikacje. Późniejsze odczyty dokonywane w 
+                    związku z przeglądami muszą być monitorowane, aby pokazały trend zmian. </p>
+                    
+                    <p ALIGN="center">
+                    <img border="0" src="images/rez_izo7.gif" alt="Rejestracja trendów" style="border: 4px outset #C0C0C0" width="500" height="346"><br>
+                    Porównanie trendów wyników pomiarów</p>
+                    
+                    <p ALIGN="JUSTIFY">Wyniki odczytów podlegają zmianom zależnym od temperatury 
+                    oraz wilgotności i czynniki te mogą wymagać korygowania dokonanych odczytów.</p>
+                    
+                    <p ALIGN="JUSTIFY"><i><b>Wpływ temperatury</b></i><br>
+                    Zmiany temperatury mogą mieć znaczący wpływ na wyniki pomiarów rezystancji 
+                    izolacji. Rezystancja izolacji spada znacząco wraz ze wzrostem temperatury. 
+                    Każdy typ materiału izolacyjnego ma różny stopień zmiany rezystancji w 
+                    zależności od temperatury. Tabele ze współczynnikami korekcji temperaturowej są 
+                    tworzone dla różnych typów aparatów elektrycznych i mogą być uzyskane od 
+                    producenta aparatu. Zaleca się jednak opracować własną tabelę współczynnika 
+                    korekcji przez rejestrację dwóch wartości dla tego samego obiektu przy dwóch 
+                    różnych temperaturach. Może być narysowany wykres rezystancji (w skali 
+                    logarytmicznej) w funkcji temperatury (w skali liniowej). Wykres jest prostą 
+                    linią i może być ekstrapolowany dla dowolnej temperatury, umożliwiając 
+                    bezpośredni odczyt współczynnika korekcji. </p>
+                    
+                <p><b>5.1 DOBÓR WSPÓŁCZYNNIKA <i>k</i> DO PROTOKOŁU:</b></p>
+                <p>W przypadku pomiarów rezystancji izolacji współczynnik krotności (k) jest stosowany głównie w celu korekcji wpływu 
+                    temperatury na wyniki pomiarów. Nie jest on jednak stosowany wprost w taki sam sposób, jak w przypadku 
+                    impedancji pętli zwarcia, ponieważ rezystancja izolacji zależy od właściwości dielektrycznych materiału, 
+                    a nie od rezystancji przewodnika.</p>
+                
+                <p><b>5.2. Normy i wytyczne:</b></p>
+                <ul class="check-list">
+                    <li>Zgodnie z normami (np. PN-HD 60364-6), rezystancja izolacji powinna być mierzona w temperaturze odniesienia
+                         (20°C). Jeśli pomiar jest przeprowadzany w innej temperaturze, należy zastosować współczynnik korekcyjny 
+                         (k), aby przeliczyć wyniki na temperaturę odniesienia.
+                    <li>Najwyższej spodziewanej temperatury przewodów (np. 70°C dla przewodów w izolacji PVC),</li>
+                    <li>Współczynnik k dla rezystancji izolacji jest odwrotny niż dla rezystancji przewodów – 
+                        wzrost temperatury obniża rezystancję izolacji, więc współczynnik k służy do korekcji w górę 
+                        (dla temperatur powyżej 20°C) lub w dół (dla temperatur poniżej 20°C).</li>
+                    <li>Wartości współczynnika k zależą od typu materiału izolacyjnego i są podane w normach lub literaturze 
+                        technicznej. <br>
+                        Poniżej tabela przedstawia współczynnik korekcyjny dla dwóch najczęściej wykorzystywanych w instalacjach materiałów. </li>
+                </ul>
+                <center>
+                <table  class="tbl-dec" style="border-collapse: collapse;"><tbody>
+                    <tr><td>Temperatura <sup>o</sup>C</td>
+                        <td align="center">4</td>
+                        <td align="center">8</td>
+                        <td align="center">10</td>
+                        <td align="center">12</td>
+                        <td align=center">16</td>
+                        <td align="center">20</td>
+                        <td align="center">24</td>
+                        <td align="center">26</td>
+                        <td align="center">28</td>
+                    </tr>
+                    <tr><td>izolacja gumowa kabla</td>
+                        <td align="center">0,47</td>
+                        <td align="center">0,57</td>
+                        <td align="center">0,62</td>
+                        <td align="center">0,68</td>
+                        <td align="center">0,83</td>
+                        <td align="center">1,0</td>
+                        <td align="center">1,18</td>
+                        <td align="center">1,26</td>
+                        <td align="center">1,38</td></tr>
+                    <tr><td>izolacja polwinitowa kabla</td>
+                        <td align="center">0,11</td>
+                        <td align="center">0,19</td>
+                        <td align="center">0,25</td>
+                        <td align="center">0,33</td>
+                        <td align="center">0,625</td>
+                        <td align="center">1,0</td>
+                        <td align="center">1,85</td>
+                        <td align="center">2,38</td>
+                        <td align="center">3,125</td></tr>
+                </tbody></table></center>
+            </div>
+            <div class="section">
+                <h2 id="roz">5. BADANIE ROZDZIELNICY</h2>
+                <p>Rozdzielnice są częściami instalacji elektrycznej przeznaczonymi do rozdziału 
+                energii elektrycznej, do łączenia i zabezpieczania linii, a także obwodów 
+                odbiorczych i zasilających. W ich skład wchodzą między innymi aparaty 
+                rozdzielcze, zabezpieczeniowe, pomiarowe, sygnalizacyjne, sterownicze, zaciski, 
+                obwody, szyny itd.</p>
+                <p>Przed oddaniem do eksploatacji albo po upłynięciu terminu okresowego 
+                sprawdzania rozdzielnice powinny być poddane sprawdzeniom w celu 
+                potwierdzenia zgodności z wymaganiami norm.</p>
+                <p>Rozdzielnice sprawdzamy zgodnie z wymaganiami postanowionymi w normie 
+                PN-E-04700:1998 Urządzenia i układy elektryczne w obiektach 
+                elektroenergetycznych. Wytyczne przeprowadzania pomontażowych badań 
+                odbiorczych pkt 7.3. Rozdzielnice prefabrykowane niskiego napięcia. </p>
+                <p>Wykonujemy oględziny i pomiary rezystancji izolacji całej rozdzielnicy, odłączonej 
+                od zasilania, na zaciskach wejściowych L1, L2, L3, N, PE, przy załączonych 
+                bezpiecznikach, wyłącznikach i innych aparatach. Pomiar należy wykonać 
+                miernikiem rezystancji izolacji o napięciu pomiarowym 1000 V d.c. Najmniejsza 
+                dopuszczalna zmierzona wartość rezystancji izolacji dla całej rozdzielnicy wynosi 
+                1 MΩ, dla poszczególnych obwodów wraz z urządzeniami nie powinna być 
+                mniejsza niż 20 MΩ.</p>
+                <p>Tabliczki znamionowe. Każda rozdzielnica powinna być wyposażona w tabliczkę 
+                znamionową wykonaną w trwały sposób i tak umiejscowioną, żeby była widoczna 
+                i czytelna po zainstalowaniu rozdzielnicy. Na tabliczce powinny być podane co 
+                najmniej następujące dane: nazwa wytwórcy lub znak fabryczny, oznaczenie typu 
+                lub numer identyfikacyjny lub inny sposób identyfikacji umożliwiający uzyskanie 
+                od wytwórcy właściwych informacji o wyrobie. </p>
+                <p>Przyjmuje się, że wytwórca ponosi odpowiedzialność za skompletowany wyrób, czyli 
+                rozdzielnicę. </p>
+
+                <p><b>Wyniki pomiarów rezystancji: </b></p>
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                <tr>
+                    <td rowspan="2">Typ urządzenia/oznaczenie</td>
+                    <td colspan="10">Pomierzona rezystancja izolacji Rp w MW; x 1000 </td>
+                    <td>Wymagania według PN E 04700:1998, pkt 7.3</td>
+                </tr>
+                <tr>
+                    <td>L1-L2, L3</td><td>L2-L1, L3</td><td>L3-L1, L2</td><td>N -L1</td><td>N -L2</td><td>N -L3</td><td>PE - L1</td><td>PE - L2</td><td>PE - L3</td><td>N - PE</td><td>Napięcie pomiarowe 1000 V, RISO > 1 MΩ</td>
+                </tr>
+                <tr>
+                    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                </tr>
+                <tr>
+                    <td>Rozdzielnica</td>
+                    <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>R > 1 MΩ</td>
+                </tr>
+                </table>    
+                <br>
+            </div>
+            <div class="section">   
+                <h2 id="czasookres">6. Czasookresy badań eksploatacyjnych</h2>
+                <p>Szczegółówe normy odnośnie oględzin i prób instalacji elektrycznych 
+                przy badaniach odbiorczych określa norma PN-IEC 60364-6-61:2000 [5], odnośnie instalacji
+                piorunochronowych norma PN-86-92/E-05003 [1] i norma PN-IEC 61024-1:2001 [6], odnośnie systemów uziemiających
+                i uziemień obiektów telekomunikacji norma zakładowaZN-96 TPSA-037 [17] oraz normy PN-T-45000-2:1998 [3] i PN-T-45000-3:1988 [4],
+                a w odniesieniu do urządzeń elektrycznych o napięciu do 1 kV norma PN-E-047000:1988 [2], która jednak nie była wprowadzona
+                do obowiązkowego stosowania</p>
+
+                <p>Obowiązująca aktualnie ustawa o normalizacji wprowadziła, że od 01 stycznia 2003 r. normy przestały
+                być dokumentami obligatoryjnymi. Przyjęta w Ustawie zasada jeszcze bardziej komplikuje, nawet bez tego nieprecyzyjne
+                wymagania odnośnie ramowych czasookresów badań eksploatacyjnych urządzeń elektrycznych.
+                </p>
+
+                <p> Wymagania dotyczące ramowych czasookresów badań eksploatacyjnych instalacji i urządzeń elektrycznych obowiązujące do 1997r. 
+                określało Zarządzenie MGiE z dnia 17.07.1987r. "w sprawie szczegółowych zasad eksploatacji sieci elektroenergetycznych"
+                wydane z mocy poprzednio obowiązującej ustawyo Gospodarce Energetycznej z 06.04.1984 r. Czasookresy te uzależnione były od charakteru instalacji (urządzeń)
+                i określone były jako nie dłuższe niż 1 rok, 5 lat i 10 lat, w zależnościod warunków środowiskowych ich użytkowania.</p>
+                <p>Na podstawie art. 71 pkt. 2 Ustawy straciła moc prawnąUstawa z 1984 r. oraz tym samym Zarządzenie MGiE z 1987 r., do którego załącznik określał 
+                zakres pomiarów i prób eksploatacyjnych oraz podane wyżej ramowe terminy ich obowiązywania.</p>
+                <p>Aktualnie obowiązującym aktem prawnym wprowadzającym wymóg przeprowadzania badań okresowych w odstępach nie dłuższych niż 5-letnich
+                jest Ustawa "Prawo Budowlane".</p>
+                <p> Racjonalne wymagania dotyczące czasookresówbadań eksploatacyjnychurządzeń i instalacji elektrycznych określają
+                "Wytyczne wykonywania badań okresowych ..." poracowane przez COBR "Elektromontaż" 1999 r.
+                </p>
+                <p>Poniższa tabela czasookresów uwzględnia powyższe opracowanie i "Parwo Budowlane"</p>
+                <p>Zalecane czasookresy pomiarów okresowych instalacji elektrycznych i 
+                urządzeń w innych lokalizacjach niż uwzględnione w ustawie Prawo budowlane </p>
+                <table class="tbl-dec" style="border-collapse: collapse;">
+                    <tr>
+                        <th rowspan="2">Rodzaj pomieszczenia </td>
+                        <th colspan ="2">Okres pomiędzy kolejnymi sprawdzeniami</td>
+                    </tr>
+                    <tr>
+                        <th>Rezystancji izolacji instalacji </td>
+                        <th>Skuteczności ochrony przeciwporażeniowej</td>
+                    </tr>
+                    <tr>
+                        <td>O wyziewach żrących</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                    </tr>
+                    <tr>
+                        <td>Zagrożone wybuchem</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                    </tr>
+                    <tr>
+                        <td>Otwarta przestrzeń </td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                    </tr>
+                    <tr>
+                        <td>Bardzo wilgotne, wilgotność ok. 100%, wilgotne przejściowo od 75% do 100% </td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                    </tr>
+                    <tr>
+                        <td>Gorące – temperatura powietrza ponad 35 &deg;C</td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                    </tr>
+                    <tr>
+                        <td>Zagrożone pożarem</td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                    </tr>
+                    <tr>
+                        <td>Stwarzające zagrożenie dla ludzi (ZLI, ZLII, ZLIII) </td>
+                        <td>Nie rzadziej niż co 1 rok</td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                    </tr>
+                    <tr>
+                        <td>Zapylone</td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                    </tr>
+                    <tr>
+                        <td>Pozostałe niewymienione </td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                        <td>Nie rzadziej niż co 5 lat</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            ZL I - budynki użyteczności publicznej lub ich części, w których mogą przebywać ludzie w grupach ponad 50 osób,
+                            <br>ZL II - budynki lub ich części przeznaczone do użytku ludzi o ograniczonej zdolności poruszania się 
+                            <br>ZL III - szkoły, budynki biurowe, domy studenckie, internaty, hotele, ośrodki zdrowia, otwarte przychodnie lekarskie,
+                            sanatoria, lokale handlowo-usługowe, w których może przebywać do 50 osób, koszary pomieszczenia ETO, zakłady karne i inne podpbne
+                        </td>
+                    </tr>
+                </table>
+                <p> Podane wyżej czasookresy badań eksploatacyjnych są jedynie zaleceniami i nie należy traktować jako obowiązujące. 
+                    Można jednak uznać, że określone w ten sposób zasady są zgodne z zasadami wiedzy technicznej i jako takie mogą być dopuszczone do stosowania przez obowiązujące "Prawo Budowlane"
+                </p>
+                <p>Należy zwrócić uwagę, że nowoustanowiona norma PN-EN 50110-1:2001 nie określa szczegółowo czasookresówbadań okresowych ograniczając swe zalecenia do stwierdzenia, że
+                    przeglądy urządzeń elektrycznych (obejmujące oględziny i pomiary) powinny być wykonywane w określonych odstępach czasu.<br>
+                    Równierz norma PN-IEC 60364-6-61:2000 podaje pewne ogólne wymagania dotyczące przeprowadzania sprawdzania 
+                    okresowego instalcaji elektrycznych w ciągu najkrótszego okresu czasu, jaki wynika z charakteru instalacji i środowiskowych warunków eksploatacji. Noram ta poza kilkoma przypadkami specjalnymi 
+                    zaleca stsowanie okresu 3-letniego i dopuszcza przyjmowanie okresów dłuższych dla budownictwa mieszkaniowego. Dla obiektów przemysłowych norma dopuszcza zastępienie badań okresowych Przez
+                     odpowiedni system, zapewniający bezpieczeństwo, system stałej kontroli i obsługi wyposażenia i instalacji 
+                     przez osoby wykwalifikowane. 
+                </p>                
+                <p>W miejscach wilgotnych, o podwyższonej temperaturze, pomieszczeniach z 
+                wyziewami żrącymi i innymi czynnikami chemicznymi, zagrożonych wybuchem 
+                próby należy wykonywać według obostrzeń w tabeli 1. Przykładem urządzeń, w 
+                których co roku powinno się też sprawdzać rezystancje uzwojeń silników, są 
+                klimatyzatory umieszczone na dachach budynków. W lokalizacjach tych (warunki 
+                obostrzone) napięcie dotykowe wynosi 25 V, a nie jak w pozostałych 50 V. </p>
+                <p>Bardziej rygorystyczne wymagania odnośnie czasookresów badań okresowych dotyczą placów budowy, dla których zwykle przyjmuje się,
+                    że kontrola okresowa stanu urządzeń elektrycznych pod względem bezpieczeństwa powinna być
+                    przeprowadzoana conajmniej dwa razy do roku, w okresach najmniej korzystnych dla stanu izolacji tych urządzeń, a ponadto:
+                <br> 1. przed uruchomieniem urządzenia po dokonaniu zmian, przeróbek i napraw zarówno elktrycznych jak i mechanicznych
+                <br> 2. przed uruchomieniem urządzenia, które nie było czynne przez okres jednego miesiąca lub dłużej,
+                <br> 3. przed uruchomieniem urządzenia po jego przemieszczeniu.
+                </p>
+            </div>  
+            <div class="section">
+                
+                    
+            </div>       
+            <div class="section">
+                <h2 id="roz">Materiały źródłowe:</h2>
+                <ul class="check-list">
+                <li>Magazyn Portal Elektryka</li>
+                <li><a href="https://www.fachowyelektryk.pl/technologie/pomiary/1964-pomiary-uziemien-ochronnych-metoda-cegowa.html">
+                    fachowy ELEKTRYK</a></li>
+                <li><a href="https://www.uprawnieniaenergetyczne.com.pl/pomiary-instalacji-elektrycznych-protokol-uprawnienia/?utm_source=chatgpt.com">
+                    Pomiary instalacji elektrycznych – protokół, rodzaje badań i wymagane uprawnienia</a></li>
+                </a></li>
+                <li>Kwartalnik BUILDING RESEARCH INSTITUTE QUARTERLY 3 (159) 2011; 
+                    <br>art. Nowe wymagania dotyczące pomiarów ochronnych w budynkach</li>
+                <li><a href="https://pomiary.a-cademy.pl/">A|CADEMY</a></li>
+                <li><a href="http://fhu-energia.pl/index.php/2019/10/20/sprawdzanie-srodkow-ochrony/">A|CADEMY</a></li>
+                <li>Czasookresy badań eksploatacyjnych i urządzeń elektrycznych - opracowanie Jan Strzałka Zakład Elektroenergetyki AGH</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <img src="img/LogoMax.png" text-align:"right" alt="LOGO" width="75">
+        <p>&copy; 2025 Office - Makra. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
